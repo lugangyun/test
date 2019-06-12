@@ -1,0 +1,7 @@
+{
+    "server": "http://localhost:22742/api/services/app/CustomTraining/",
+    "taskServer": "http://localhost:22742/api/services/app/TrainingTaskStudent/",
+    "speechServer": "http://localhost:22742/api/services/app/CommonUnits/",
+    "reportServer": "http://localhost:4200/#/trainingReport/",
+    "defaultGame": "CommonFruit"
+}

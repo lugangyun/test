@@ -1,0 +1,23 @@
+{
+    "initLineThickness": 20,
+    "initLineColor": "0x0000ff",
+    "lineThickness": 30,
+    "lineColor": "0x0000ff",
+    "dottedLineThickness": 70,
+    "dottedLineColor": "0xfa800a",
+    "rightLineColor": "0x00ff00",
+    "handAnimationInterval": 1,
+    "testPointDist": 3,
+
+    "mPDSc": 50,
+    "lostRate": 0.15,
+    "lenDiff": 0.25,
+    "errRate": 0.25,
+    "distAvgClose": 150,
+    "distAvgOpen": 400,
+    "maxDClose": 1.3,
+    "maxDOpen": 2,
+    "maxDOpenOffset": 1200,
+
+    "showStats": false
+}

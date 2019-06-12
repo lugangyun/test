@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1a8c9fa7-6e39-4f51-ab49-03d29d9b430d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "watermelonBtn": {
+      "ver": "1.0.4",
+      "uuid": "507f8f51-2467-44c6-aba8-113913d0650e",
+      "rawTextureUuid": "1a8c9fa7-6e39-4f51-ab49-03d29d9b430d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 126,
+      "height": 126,
+      "rawWidth": 126,
+      "rawHeight": 126,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
