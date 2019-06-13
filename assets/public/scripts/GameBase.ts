@@ -40,19 +40,23 @@ export default abstract class GameBase {
     }
 
     public nextQuestion() {
-        this.record();
+        // this.record();
         if (this.questionIndex < this.questionLength - 1) {
             this.questionIndex++;
             this.updateCounter();
             this.refresh();
         }
         else {
-            this.saveReport();
+            // this.saveReport();
         }
     }
 
     public lastQuestion() {
-
+        if (this.questionIndex > 0) {
+            this.questionIndex--;
+            this.updateCounter();
+            this.refresh();
+        }
     }
 
     public reportDetails: ReportDetial[] = [];
