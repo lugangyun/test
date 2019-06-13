@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.334088134765625,
-      "y": 0.334088134765625,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
     "_quat": {
@@ -2013,12 +2013,111 @@
         "__uuid__": "01c128a6-3db9-441a-8885-2fd501c147f1"
       }
     ],
-    "pearAudio": [],
-    "appleAudio": [],
-    "grapeAudio": [],
-    "orangeAudio": [],
-    "watermelonAudio": [],
-    "bananaAudio": [],
+    "pearAudio": [
+      {
+        "__uuid__": "cdbf3a55-1900-4b0a-afee-b803fd48d126"
+      },
+      {
+        "__uuid__": "e3e914a3-4b59-4adc-bb5c-0db17802681f"
+      },
+      {
+        "__uuid__": "7ade95b1-e7b3-43a8-a061-023bad550f52"
+      },
+      {
+        "__uuid__": "2173c007-1aaa-4943-8a15-e581edf2329c"
+      },
+      {
+        "__uuid__": "2a364d04-53cd-4fcf-aaa7-97fc29be89e1"
+      }
+    ],
+    "appleAudio": [
+      {
+        "__uuid__": "31f3882e-6f3f-4cbf-acfb-8b1174a286e3"
+      },
+      {
+        "__uuid__": "0f0cb92b-27f1-41d1-b457-18a7962dea38"
+      },
+      {
+        "__uuid__": "5e41811a-7789-449e-88af-9299485ad1f4"
+      },
+      {
+        "__uuid__": "d767e048-fd33-47c3-8b34-ed4bdb11bf9e"
+      },
+      {
+        "__uuid__": "42f13727-a991-4218-b740-c893542eb1a5"
+      }
+    ],
+    "grapeAudio": [
+      {
+        "__uuid__": "71738031-8717-4ae5-9028-cce8a25f6dc1"
+      },
+      {
+        "__uuid__": "b2a6bd1c-7e87-4e15-bac9-35c798ac1746"
+      },
+      {
+        "__uuid__": "4d416d83-fa49-4292-8df3-f9671c5bb9fa"
+      },
+      {
+        "__uuid__": "cab38b6f-0196-4f07-9bc4-34959d67b77c"
+      },
+      {
+        "__uuid__": "b6ff40e7-7ef8-44ab-bbcc-99d13a4168fd"
+      },
+      {
+        "__uuid__": "5ff9344f-6feb-42fc-8b1c-582148ef4e9d"
+      }
+    ],
+    "orangeAudio": [
+      {
+        "__uuid__": "84a73d6b-d4cb-4ffc-bc01-c7c406b8e1a3"
+      },
+      {
+        "__uuid__": "c87ea747-9ee9-4128-acfd-9ae782eb00ad"
+      },
+      {
+        "__uuid__": "36aaacfb-0da3-48c3-a47a-63e31c8194d4"
+      },
+      {
+        "__uuid__": "e5b91fdb-c5aa-4842-8457-8d6454cc1fa5"
+      },
+      {
+        "__uuid__": "7d56a366-3298-4f83-82f8-77b829abce94"
+      }
+    ],
+    "watermelonAudio": [
+      {
+        "__uuid__": "6c0e3f6d-c2a5-4c3d-a7d5-6bc13aa25bca"
+      },
+      {
+        "__uuid__": "6c0e3f6d-c2a5-4c3d-a7d5-6bc13aa25bca"
+      },
+      {
+        "__uuid__": "d37c120f-c514-4439-8c28-de6addba03fb"
+      },
+      {
+        "__uuid__": "6e5d87cb-1372-4184-975d-3442ed61ea34"
+      },
+      {
+        "__uuid__": "9db401f6-5b1a-42f0-9408-75b8dbb0b0b0"
+      }
+    ],
+    "bananaAudio": [
+      {
+        "__uuid__": "e8188e06-39ec-4c50-98fd-58525ef11357"
+      },
+      {
+        "__uuid__": "19b6e48a-78fd-47b6-b155-3905b5765883"
+      },
+      {
+        "__uuid__": "766802f1-7c65-46b3-b282-140f6f8ada25"
+      },
+      {
+        "__uuid__": "9fb59be0-7795-479f-870c-bad60e84c34e"
+      },
+      {
+        "__uuid__": "1897a35b-d48b-429b-8dc9-ad3afca951bb"
+      }
+    ],
     "_id": "c7O2tYdcRBRqzrjLVEO5OP"
   },
   {
