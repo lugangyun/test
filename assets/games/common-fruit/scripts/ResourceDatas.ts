@@ -22,22 +22,22 @@ export default class NewClass extends cc.Component {
     @property(cc.SpriteFrame)
     bananaSprite: cc.SpriteFrame[] = [];
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     pearAudio: cc.AudioClip[] = [];
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     appleAudio: cc.AudioClip[] = [];
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     grapeAudio: cc.AudioClip[] = [];
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     orangeAudio: cc.AudioClip[] = [];
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     watermelonAudio: cc.AudioClip[] = [];
 
-    @property(cc.AudioClip)
+    @property({ type: cc.AudioClip })
     bananaAudio: cc.AudioClip[] = [];
 
     // LIFE-CYCLE CALLBACKS:
