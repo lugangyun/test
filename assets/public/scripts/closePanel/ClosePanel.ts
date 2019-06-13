@@ -4,29 +4,26 @@ import ServerInfo from "../ServerInfo";
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
+export default class ClosePanel extends cc.Component {
 
     // onLoad () {}
 
     start() { }
 
     show() {
-        let popup = this.node.getChildByName("popup");
-        popup.active = true;
-        let panel = popup.getChildByName("panel");
+        this.node.active = true;
+        let panel = this.node.getChildByName("panel");
         var animation = panel.getComponent(cc.Animation);
         animation.play("panelPopupAnimation");
         GameTimer.stop();
     }
 
     noButtonClick() {
-        let popup = this.node.getChildByName("popup");
-        popup.active = true;
-        let panel = popup.getChildByName("panel");
+        let panel = this.node.getChildByName("panel");
         let animation = panel.getComponent(cc.Animation);
         animation.play("panelCloseAnimation");
         animation.on(cc.Animation.EventType.FINISHED, () => {
-            popup.active = false;
+            this.node.active = false;
             GameTimer.start();
             animation.off(cc.Animation.EventType.FINISHED);
         });
