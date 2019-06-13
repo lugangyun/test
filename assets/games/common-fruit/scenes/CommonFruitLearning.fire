@@ -2013,6 +2013,12 @@
         "__uuid__": "01c128a6-3db9-441a-8885-2fd501c147f1"
       }
     ],
+    "pearAudio": [],
+    "appleAudio": [],
+    "grapeAudio": [],
+    "orangeAudio": [],
+    "watermelonAudio": [],
+    "bananaAudio": [],
     "_id": "c7O2tYdcRBRqzrjLVEO5OP"
   },
   {
@@ -2089,8 +2095,10 @@
     "_fontSize": 60,
     "_lineHeight": 60,
     "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
+    "_N$file": {
+      "__uuid__": "5ff9d47b-7079-49a2-b28e-2ee435c3d7ad"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 1,
