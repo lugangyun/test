@@ -16,6 +16,7 @@ export default abstract class GameBase {
         this.questionIndex = 0;
         this.saveReportInput.details = [];
         this.reportDetail = new ReportDetial();
+        this.type = type;
         this.start();
         // this.updateCounter();
         // this.refresh();

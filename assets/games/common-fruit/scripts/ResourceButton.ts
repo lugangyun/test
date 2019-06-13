@@ -1,3 +1,5 @@
+import CommonFruit from "./CommonFruit";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -22,6 +24,7 @@ export default class ResourceButton extends cc.Component {
             }
             else {
                 nodeButton.normalSprite = nodeButton.pressedSprite;
+                CommonFruit.getInstance().setLearningQuestion(node.name.replace("Btn", ""));
             }
         });
     }

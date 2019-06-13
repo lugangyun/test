@@ -1,4 +1,5 @@
 import GameBase from "../../../public/scripts/GameBase";
+import ResourceDatas from "./ResourceDatas";
 
 export default class CommonFruit extends GameBase {
 
@@ -11,12 +12,34 @@ export default class CommonFruit extends GameBase {
         return this._instance;
     }
 
+    learningQuestions: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
+    get learningQuestion() {
+        return this.learningQuestions[this.questionIndex];
+    }
+
+    setLearningQuestion(fruit: string) {
+        let datas = cc.director.getScene().getChildByName("ResourceDatas")
+            .getComponent(ResourceDatas);
+        this.learningQuestions = datas[fruit];
+        this.questionIndex = 0;
+        this.questionLength = this.learningQuestions.length;
+        this.refresh();
+    }
+
     start(): void {
 
     }
 
     refresh(): void {
-
+        let scene = cc.director.getScene();
+        if (this.type == CommonFruitType.learning) {
+            let box = scene.getChildByName("Canvas").getChildByName("learningPictureBox");
+            let sprite = box.getChildByName("learningPicture").getComponent(cc.Sprite);
+            let label = box.getChildByName("label").getComponent(cc.Label);
+            sprite.spriteFrame = this.learningQuestion.spriteFrame;
+            label.string = this.learningQuestion.spriteFrame.name;
+            let audioId = cc.audioEngine.play(this.learningQuestion.audioClip, false, 1);
+        }
     }
 
 }
