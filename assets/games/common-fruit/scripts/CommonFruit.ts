@@ -23,11 +23,16 @@ export default class CommonFruit extends GameBase {
         this.learningQuestions = datas[fruit];
         this.questionIndex = 0;
         this.questionLength = this.learningQuestions.length;
+        this.updateCounter();
         this.refresh();
     }
 
     start(): void {
-
+        let canvas = cc.director.getScene().getChildByName("Canvas");
+        if (this.type == CommonFruitType.learning) {
+            let button = canvas.getChildByName("resourceButtons").children[0].getComponent(cc.Button);
+            button.clickEvents[0].emit(undefined);
+        }
     }
 
     refresh(): void {

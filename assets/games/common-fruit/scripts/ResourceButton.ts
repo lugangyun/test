@@ -7,10 +7,12 @@ export default class ResourceButton extends cc.Component {
 
     normalSprite: cc.SpriteFrame;
 
-    // onLoad () {}
+    onLoad() {
+        this.normalSprite = this.node.getComponent(cc.Sprite).spriteFrame;
+    }
 
     start() {
-        this.normalSprite = this.node.getComponent(cc.Sprite).spriteFrame;
+        
     }
 
     clickEventHandle() {
