@@ -12,12 +12,12 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "closeButton",
+    "_name": "Learning",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 1,
+    "_level": 2,
     "_components": [
       {
         "__id__": 2
@@ -30,7 +30,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 6
     },
     "_opacity": 255,
     "_color": {
@@ -42,8 +42,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 55,
-      "height": 55
+      "width": 311,
+      "height": 120
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -52,8 +52,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 582.5,
-      "y": 302.5,
+      "x": -350,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -87,7 +87,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "f53aef0d-5f3a-442c-bc2b-1ef64b62385c"
+      "__uuid__": "cd5839ed-bf1e-4f69-aae6-000bdb9eb2d3"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -105,30 +105,13 @@
     "_id": ""
   },
   {
-    "__type__": "cc.Widget",
+    "__type__": "a0b80VlKeVPqLHUstxYrBdy",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "alignMode": 1,
-    "_target": null,
-    "_alignFlags": 33,
-    "_left": 0,
-    "_right": 30,
-    "_top": 30,
-    "_bottom": 0,
-    "_verticalCenter": 0,
-    "_horizontalCenter": 0,
-    "_isAbsLeft": true,
-    "_isAbsRight": true,
-    "_isAbsTop": true,
-    "_isAbsBottom": true,
-    "_isAbsHorizontalCenter": true,
-    "_isAbsVerticalCenter": true,
-    "_originalWidth": 0,
-    "_originalHeight": 0,
     "_id": ""
   },
   {
@@ -142,10 +125,12 @@
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
-      null
+      {
+        "__id__": 5
+      }
     ],
     "_N$interactable": true,
-    "_N$enableAutoGrayEffect": true,
+    "_N$enableAutoGrayEffect": false,
     "_N$transition": 3,
     "transition": 3,
     "_N$normalColor": {
@@ -200,14 +185,24 @@
     "_id": ""
   },
   {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 1
+    },
+    "component": "",
+    "_componentId": "a0b80VlKeVPqLHUstxYrBdy",
+    "handler": "gameStart",
+    "customEventData": ""
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f2a3a3d2-ddb4-4418-bbb2-b711ae03f544"
+      "__id__": 0
     },
-    "fileId": "07Cb8PjyZE0od07JAJVuq/",
+    "fileId": "adjv6UVx1LJodxghvs9Snl",
     "sync": false
   }
 ]
