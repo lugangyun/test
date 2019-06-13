@@ -1,51 +1,39 @@
-
 const { ccclass, property } = cc._decorator;
 
+var FruitData = cc.Class({
+    name: "FruitData",
+    properties: {
+        spriteFrame: cc.SpriteFrame,
+        audioClip: { type: cc.AudioClip, default: null }
+    }
+})
+
 @ccclass
-export default class NewClass extends cc.Component {
+export default class ResourceDatas extends cc.Component {
 
-    @property(cc.SpriteFrame)
-    pearSprite: cc.SpriteFrame[] = [];
+    @property(FruitData)
+    pear: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
-    @property(cc.SpriteFrame)
-    appleSprite: cc.SpriteFrame[] = [];
+    @property(FruitData)
+    apple: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
-    @property(cc.SpriteFrame)
-    grapeSprite: cc.SpriteFrame[] = [];
+    @property(FruitData)
+    grape: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
-    @property(cc.SpriteFrame)
-    orangeSprite: cc.SpriteFrame[] = [];
+    @property(FruitData)
+    orange: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
-    @property(cc.SpriteFrame)
-    watermelonSprite: cc.SpriteFrame[] = [];
+    @property(FruitData)
+    watermelon: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
-    @property(cc.SpriteFrame)
-    bananaSprite: cc.SpriteFrame[] = [];
-
-    @property({ type: cc.AudioClip })
-    pearAudio: cc.AudioClip[] = [];
-
-    @property({ type: cc.AudioClip })
-    appleAudio: cc.AudioClip[] = [];
-
-    @property({ type: cc.AudioClip })
-    grapeAudio: cc.AudioClip[] = [];
-
-    @property({ type: cc.AudioClip })
-    orangeAudio: cc.AudioClip[] = [];
-
-    @property({ type: cc.AudioClip })
-    watermelonAudio: cc.AudioClip[] = [];
-
-    @property({ type: cc.AudioClip })
-    bananaAudio: cc.AudioClip[] = [];
+    @property(FruitData)
+    banana: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start() {
-
     }
 
     // update (dt) {}
