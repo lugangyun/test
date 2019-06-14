@@ -1,9 +1,26 @@
 export class Tools {
-    public static getRandomNum(Min: number, Max: number) {
-        var Range = Max - Min + 1;
-        var Rand = Math.random();
-        Rand = Min + Math.floor(Rand * Range);
-        return Rand;
+    public static getRandomNum(min: number, max: number, excludeNum?: number[]) {
+        var rand = Math.random();
+        var range = max - min + 1;
+        rand = min + Math.floor(rand * range);
+        if (excludeNum) {
+            if (excludeNum.length >= max - min + 1) {
+                console.error("exclude numbers exceed the range");
+            }
+            else {
+                let maxTestCount = 10000;
+                for (var i = 0; i < maxTestCount; i++) {
+                    if (excludeNum.indexOf(rand) < 0) {
+                        break;
+                    }
+                    rand = Tools.getRandomNum(min, max);
+                }
+                if (i == maxTestCount) {
+                    console.error("maximum test times reached");
+                }
+            }
+        }
+        return rand;
     }
 
     // 传入数组，返回乱序后的数组

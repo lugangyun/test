@@ -18,8 +18,12 @@ export default abstract class GameBase {
         this.reportDetail = new ReportDetial();
         this.type = type;
         this.start();
-        // this.updateCounter();
-        // this.refresh();
+        this.updateCounter();
+        this.refresh();
+    }
+
+    get canvas() {
+        return cc.director.getScene().getChildByName("Canvas");
     }
 
     /**

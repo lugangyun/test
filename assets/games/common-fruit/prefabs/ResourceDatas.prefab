@@ -17,14 +17,14 @@
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 2,
+    "_level": 1,
     "_components": [
       {
         "__id__": 2
       }
     ],
     "_prefab": {
-      "__id__": 3
+      "__id__": 40
     },
     "_opacity": 255,
     "_color": {
@@ -46,8 +46,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": 701,
+      "y": 339,
       "z": 0
     },
     "_scale": {
@@ -78,112 +78,465 @@
       "__id__": 1
     },
     "_enabled": true,
-    "pearSprite": [
+    "fruits": [
       {
-        "__uuid__": "d865820d-6df6-44cc-bdd7-3124a56c2ae5"
+        "__id__": 3
       },
       {
-        "__uuid__": "6f1b91e8-4558-407f-83f5-79ca349c749e"
+        "__id__": 4
       },
       {
-        "__uuid__": "1b8c033b-230d-48df-80de-f4151ee25e18"
+        "__id__": 5
       },
       {
-        "__uuid__": "99c3954a-36de-40cc-806e-741b1f9cdf85"
+        "__id__": 6
       },
       {
-        "__uuid__": "29079d1c-2f17-4c3e-b091-5ff11dce2172"
+        "__id__": 7
+      },
+      {
+        "__id__": 8
       }
     ],
-    "appleSprite": [
+    "pear": [
       {
-        "__uuid__": "b501af4a-c290-41e9-aaa3-a05caf544e42"
+        "__id__": 9
       },
       {
-        "__uuid__": "7f1144cc-e7a7-419a-b3e8-ae03f7d1b7de"
+        "__id__": 10
       },
       {
-        "__uuid__": "15314230-bc10-4e2e-bac8-c6d451dd22fa"
+        "__id__": 11
       },
       {
-        "__uuid__": "3ddbe0d1-8057-4392-aad7-fd85ac7ab6af"
+        "__id__": 12
       },
       {
-        "__uuid__": "c699aa69-8ed5-4159-805c-ff0b8e4ee9f8"
+        "__id__": 13
       }
     ],
-    "grapeSprite": [
+    "apple": [
       {
-        "__uuid__": "4a7c8694-f4a4-4c8f-b10d-e50bf32577ef"
+        "__id__": 14
       },
       {
-        "__uuid__": "3d0036e7-f498-4fe8-a7fd-1c1c11e0a59f"
+        "__id__": 15
       },
       {
-        "__uuid__": "78ec7801-ea08-4d0a-abc6-0ce906a4c2fb"
+        "__id__": 16
       },
       {
-        "__uuid__": "4e75b001-496a-4aea-a037-a2debee8255d"
+        "__id__": 17
       },
       {
-        "__uuid__": "1667ddf9-7eaa-45c3-b79c-522b2b3370bc"
-      },
-      {
-        "__uuid__": "1a722040-9df1-4255-b0f9-18845d3092a7"
+        "__id__": 18
       }
     ],
-    "orangeSprite": [
+    "grape": [
       {
-        "__uuid__": "cf48a77b-4bd8-4ae7-aabe-acde886bf200"
+        "__id__": 19
       },
       {
-        "__uuid__": "975cb6df-4a07-40ad-add8-8e7c77553540"
+        "__id__": 20
       },
       {
-        "__uuid__": "fe7daeed-28a1-4bda-89c7-3fb71f01aaff"
+        "__id__": 21
       },
       {
-        "__uuid__": "eb2505c8-a874-4e36-a33b-a619739a5847"
+        "__id__": 22
       },
       {
-        "__uuid__": "772a75ca-939c-474b-93d6-b5c4777ed939"
+        "__id__": 23
+      },
+      {
+        "__id__": 24
       }
     ],
-    "watermelonSprite": [
+    "orange": [
       {
-        "__uuid__": "72fcfbe1-ff08-4953-b199-9bfafdcd407a"
+        "__id__": 25
       },
       {
-        "__uuid__": "2954ef6f-12e3-4c20-97e6-5b3817c1e5a3"
+        "__id__": 26
       },
       {
-        "__uuid__": "42fc8c10-0f83-41e3-9359-0be0601e9414"
+        "__id__": 27
       },
       {
-        "__uuid__": "490057ad-7a05-4ba9-851a-a4ad52e0594c"
+        "__id__": 28
       },
       {
-        "__uuid__": "83b97e44-e49a-424e-99ab-9827d31b4805"
+        "__id__": 29
       }
     ],
-    "bananaSprite": [
+    "watermelon": [
       {
-        "__uuid__": "a8b32777-2ca6-44c1-9e9e-9055e468a0d5"
+        "__id__": 30
       },
       {
-        "__uuid__": "44b1afdc-5fe7-477e-b731-398f0e3c7dd3"
+        "__id__": 31
       },
       {
-        "__uuid__": "8ac4e8a5-0260-4740-940a-9f7cff7ba44b"
+        "__id__": 32
       },
       {
-        "__uuid__": "e0d3fb73-6b04-48df-9b69-b13ddfa3ee0a"
+        "__id__": 33
       },
       {
-        "__uuid__": "01c128a6-3db9-441a-8885-2fd501c147f1"
+        "__id__": 34
+      }
+    ],
+    "banana": [
+      {
+        "__id__": 35
+      },
+      {
+        "__id__": 36
+      },
+      {
+        "__id__": 37
+      },
+      {
+        "__id__": 38
+      },
+      {
+        "__id__": 39
       }
     ],
     "_id": ""
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "b908c8e2-f935-4e69-8843-58f77bcbf5d8"
+    },
+    "audioClip": {
+      "__uuid__": "f7731b5c-9a9d-4cdc-b627-ca14f7f7ded9"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "ee94b63e-6eb7-47f8-97d4-86643357e4d6"
+    },
+    "audioClip": {
+      "__uuid__": "2dcb2419-f09c-4bf2-9d9f-de043611b64a"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "6a63c515-c644-43cb-b065-8622c106a6e1"
+    },
+    "audioClip": {
+      "__uuid__": "4f610192-f1fe-499a-bdc5-9f32d4f56398"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "45246eb1-e435-489d-be7c-eaa8522da90a"
+    },
+    "audioClip": {
+      "__uuid__": "b7df43a9-3581-466d-bb4e-8505d6ca5933"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "e81ef3a1-e5cc-4ce0-ac28-434a482871b5"
+    },
+    "audioClip": {
+      "__uuid__": "5e38d0b2-01b6-44f1-9b78-d9c57efdce14"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "f3b3eeb6-6ff2-4b1c-b30e-d7f9af643777"
+    },
+    "audioClip": {
+      "__uuid__": "09c86066-4878-4db1-8fae-9b14e4894a71"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "d865820d-6df6-44cc-bdd7-3124a56c2ae5"
+    },
+    "audioClip": {
+      "__uuid__": "cdbf3a55-1900-4b0a-afee-b803fd48d126"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "6f1b91e8-4558-407f-83f5-79ca349c749e"
+    },
+    "audioClip": {
+      "__uuid__": "e3e914a3-4b59-4adc-bb5c-0db17802681f"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "1b8c033b-230d-48df-80de-f4151ee25e18"
+    },
+    "audioClip": {
+      "__uuid__": "7ade95b1-e7b3-43a8-a061-023bad550f52"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "99c3954a-36de-40cc-806e-741b1f9cdf85"
+    },
+    "audioClip": {
+      "__uuid__": "2173c007-1aaa-4943-8a15-e581edf2329c"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "29079d1c-2f17-4c3e-b091-5ff11dce2172"
+    },
+    "audioClip": {
+      "__uuid__": "2a364d04-53cd-4fcf-aaa7-97fc29be89e1"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "b501af4a-c290-41e9-aaa3-a05caf544e42"
+    },
+    "audioClip": {
+      "__uuid__": "31f3882e-6f3f-4cbf-acfb-8b1174a286e3"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "7f1144cc-e7a7-419a-b3e8-ae03f7d1b7de"
+    },
+    "audioClip": {
+      "__uuid__": "31f3882e-6f3f-4cbf-acfb-8b1174a286e3"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "15314230-bc10-4e2e-bac8-c6d451dd22fa"
+    },
+    "audioClip": {
+      "__uuid__": "5e41811a-7789-449e-88af-9299485ad1f4"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "3ddbe0d1-8057-4392-aad7-fd85ac7ab6af"
+    },
+    "audioClip": {
+      "__uuid__": "d767e048-fd33-47c3-8b34-ed4bdb11bf9e"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "c699aa69-8ed5-4159-805c-ff0b8e4ee9f8"
+    },
+    "audioClip": {
+      "__uuid__": "42f13727-a991-4218-b740-c893542eb1a5"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "4a7c8694-f4a4-4c8f-b10d-e50bf32577ef"
+    },
+    "audioClip": {
+      "__uuid__": "71738031-8717-4ae5-9028-cce8a25f6dc1"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "3d0036e7-f498-4fe8-a7fd-1c1c11e0a59f"
+    },
+    "audioClip": {
+      "__uuid__": "b2a6bd1c-7e87-4e15-bac9-35c798ac1746"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "78ec7801-ea08-4d0a-abc6-0ce906a4c2fb"
+    },
+    "audioClip": {
+      "__uuid__": "4d416d83-fa49-4292-8df3-f9671c5bb9fa"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "4e75b001-496a-4aea-a037-a2debee8255d"
+    },
+    "audioClip": {
+      "__uuid__": "cab38b6f-0196-4f07-9bc4-34959d67b77c"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "1667ddf9-7eaa-45c3-b79c-522b2b3370bc"
+    },
+    "audioClip": {
+      "__uuid__": "b6ff40e7-7ef8-44ab-bbcc-99d13a4168fd"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "1a722040-9df1-4255-b0f9-18845d3092a7"
+    },
+    "audioClip": {
+      "__uuid__": "5ff9344f-6feb-42fc-8b1c-582148ef4e9d"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "cf48a77b-4bd8-4ae7-aabe-acde886bf200"
+    },
+    "audioClip": {
+      "__uuid__": "84a73d6b-d4cb-4ffc-bc01-c7c406b8e1a3"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "975cb6df-4a07-40ad-add8-8e7c77553540"
+    },
+    "audioClip": {
+      "__uuid__": "c87ea747-9ee9-4128-acfd-9ae782eb00ad"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "fe7daeed-28a1-4bda-89c7-3fb71f01aaff"
+    },
+    "audioClip": {
+      "__uuid__": "36aaacfb-0da3-48c3-a47a-63e31c8194d4"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "eb2505c8-a874-4e36-a33b-a619739a5847"
+    },
+    "audioClip": {
+      "__uuid__": "e5b91fdb-c5aa-4842-8457-8d6454cc1fa5"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "772a75ca-939c-474b-93d6-b5c4777ed939"
+    },
+    "audioClip": {
+      "__uuid__": "7d56a366-3298-4f83-82f8-77b829abce94"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "72fcfbe1-ff08-4953-b199-9bfafdcd407a"
+    },
+    "audioClip": {
+      "__uuid__": "6c0e3f6d-c2a5-4c3d-a7d5-6bc13aa25bca"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "2954ef6f-12e3-4c20-97e6-5b3817c1e5a3"
+    },
+    "audioClip": {
+      "__uuid__": "6c0e3f6d-c2a5-4c3d-a7d5-6bc13aa25bca"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "42fc8c10-0f83-41e3-9359-0be0601e9414"
+    },
+    "audioClip": {
+      "__uuid__": "d37c120f-c514-4439-8c28-de6addba03fb"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "490057ad-7a05-4ba9-851a-a4ad52e0594c"
+    },
+    "audioClip": {
+      "__uuid__": "6e5d87cb-1372-4184-975d-3442ed61ea34"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "83b97e44-e49a-424e-99ab-9827d31b4805"
+    },
+    "audioClip": {
+      "__uuid__": "9db401f6-5b1a-42f0-9408-75b8dbb0b0b0"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "a8b32777-2ca6-44c1-9e9e-9055e468a0d5"
+    },
+    "audioClip": {
+      "__uuid__": "e8188e06-39ec-4c50-98fd-58525ef11357"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "44b1afdc-5fe7-477e-b731-398f0e3c7dd3"
+    },
+    "audioClip": {
+      "__uuid__": "19b6e48a-78fd-47b6-b155-3905b5765883"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "8ac4e8a5-0260-4740-940a-9f7cff7ba44b"
+    },
+    "audioClip": {
+      "__uuid__": "766802f1-7c65-46b3-b282-140f6f8ada25"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "e0d3fb73-6b04-48df-9b69-b13ddfa3ee0a"
+    },
+    "audioClip": {
+      "__uuid__": "9fb59be0-7795-479f-870c-bad60e84c34e"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "01c128a6-3db9-441a-8885-2fd501c147f1"
+    },
+    "audioClip": {
+      "__uuid__": "1897a35b-d48b-429b-8dc9-ad3afca951bb"
+    }
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -191,7 +544,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "332fd0a4-bfa2-4f38-9712-b1657cb50b86"
     },
     "fileId": "62aKFyoRpD+aDgoEjtPMtk",
     "sync": false
