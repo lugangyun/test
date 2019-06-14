@@ -421,6 +421,12 @@
       "__id__": 1
     },
     "_enabled": true,
+    "rightAudio": {
+      "__uuid__": "008f964c-c181-4083-8bf3-3fbd8ceeb353"
+    },
+    "wrongAudio": {
+      "__uuid__": "73483b49-9cf5-4c8c-b691-3664cdd05eda"
+    },
     "_id": ""
   },
   {

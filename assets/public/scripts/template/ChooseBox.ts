@@ -5,6 +5,13 @@ const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class ChooseBox extends cc.Component {
+
+    @property({ type: cc.AudioClip })
+    rightAudio: cc.AudioClip = null;
+
+    @property({ type: cc.AudioClip })
+    wrongAudio: cc.AudioClip = null;
+
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
@@ -33,16 +40,18 @@ export default class ChooseBox extends cc.Component {
             this.draw(0x00e600);
             let animation = this.node.getChildByName("checkMark").getComponent(cc.Animation);
             animation.play("checkMark");
-            animation.on(cc.Animation.EventType.FINISHED, () => {
-                animation.off(cc.Animation.EventType.FINISHED);
-                resolve();
-            })
+            let audioId = cc.audioEngine.play(this.rightAudio, false, 1);
+            cc.audioEngine.setFinishCallback(audioId, resolve);
         })
     }
 
     async wrong() {
-        this.draw(0xff0000);
-        await CustomAnimation.shake(this.node);
+        return new Promise((resolve, reject) => {
+            this.draw(0xff0000);
+            CustomAnimation.shake(this.node);
+            let audioId = cc.audioEngine.play(this.wrongAudio, false, 1);
+            cc.audioEngine.setFinishCallback(audioId, resolve);
+        });
     }
 
     disable() {
