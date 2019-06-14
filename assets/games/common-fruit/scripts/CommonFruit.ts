@@ -1,5 +1,7 @@
 import GameBase from "../../../public/scripts/GameBase";
 import ResourceDatas from "./ResourceDatas";
+import { Tools } from "../../../public/scripts/Tools";
+import ChooseBox from "../../../public/scripts/template/ChooseBox";
 
 export default class CommonFruit extends GameBase {
 
@@ -17,14 +19,40 @@ export default class CommonFruit extends GameBase {
         return this.learningQuestions[this.questionIndex];
     }
 
+    chooseQuestions: { text: string, sprites: cc.SpriteFrame[], answerIndex: number }[] = [];
+    get chooseQuestion() {
+        return this.chooseQuestions[this.questionIndex];
+    }
+
+    get datas() {
+        return cc.director.getScene().getChildByName("ResourceDatas").getComponent(ResourceDatas);
+    }
+
     setLearningQuestion(fruit: string) {
-        let datas = cc.director.getScene().getChildByName("ResourceDatas")
-            .getComponent(ResourceDatas);
-        this.learningQuestions = datas[fruit];
+        this.learningQuestions = this.datas[fruit];
         this.questionIndex = 0;
         this.questionLength = this.learningQuestions.length;
         this.updateCounter();
         this.refresh();
+    }
+
+    createChooseQuestions() {
+        this.chooseQuestions = [];
+        let questionsSource = this.datas.fruits.concat(this.datas.fruits);
+        questionsSource = Tools.disorder(questionsSource);
+        for (let data of questionsSource) {
+            let targetIndex = this.datas.fruits.indexOf(data);
+            let interferenceIndex = Tools.getRandomNum(0, this.datas.fruits.length - 1, [targetIndex]);
+            let interferenceData = this.datas.fruits[interferenceIndex];
+            let questionSprites = [data.spriteFrame, interferenceData.spriteFrame];
+            questionSprites = Tools.disorder(questionSprites);
+            this.chooseQuestions.push({
+                text: "请找出" + data.spriteFrame.name,
+                sprites: questionSprites,
+                answerIndex: questionSprites.findIndex(x => x == data.spriteFrame)
+            });
+        }
+        this.questionLength = this.chooseQuestions.length;
     }
 
     start(): void {
@@ -33,20 +61,49 @@ export default class CommonFruit extends GameBase {
             let button = canvas.getChildByName("resourceButtons").children[0].getComponent(cc.Button);
             button.clickEvents[0].emit(undefined);
         }
+        else if (this.type == CommonFruitType.choose) {
+            this.createChooseQuestions();
+        }
     }
 
     refresh(): void {
-        let scene = cc.director.getScene();
+        let canvas = cc.director.getScene().getChildByName("Canvas");
         if (this.type == CommonFruitType.learning) {
-            let box = scene.getChildByName("Canvas").getChildByName("learningPictureBox");
+            let box = canvas.getChildByName("learningPictureBox");
             let sprite = box.getChildByName("learningPicture").getComponent(cc.Sprite);
             let label = box.getChildByName("label").getComponent(cc.Label);
             sprite.spriteFrame = this.learningQuestion.spriteFrame;
             label.string = this.learningQuestion.spriteFrame.name;
             let audioId = cc.audioEngine.play(this.learningQuestion.audioClip, false, 1);
         }
+        else if (this.type == CommonFruitType.choose) {
+            let questionTitle = canvas.getChildByName("questionTitle");
+            questionTitle.getComponent(cc.Label).string = this.chooseQuestion.text;
+            let chooses = canvas.getChildByName("chooses");
+            this.chooseQuestion.sprites.forEach((spriteFrame, index) => {
+                chooses.children[index].getComponent(ChooseBox).init(this.judge, this);
+                chooses.children[index].getChildByName("image")
+                    .getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            })
+        }
     }
 
+    async judge(selectIndex: number) {
+        let chooses = this.canvas.getChildByName("chooses");
+        chooses.children.forEach((choose, index) => {
+            if (index != selectIndex) {
+                choose.getComponent(ChooseBox).disable();
+            }
+        });
+        let selectTarget = chooses.children[selectIndex].getComponent(ChooseBox);
+        if (this.chooseQuestion.answerIndex == selectIndex) {
+            await selectTarget.right();
+            this.refresh();
+        }
+        else {
+            selectTarget.wrong();
+        }
+    }
 }
 
 enum CommonFruitType {

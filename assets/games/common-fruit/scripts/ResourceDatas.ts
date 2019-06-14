@@ -12,6 +12,9 @@ var FruitData = cc.Class({
 export default class ResourceDatas extends cc.Component {
 
     @property(FruitData)
+    fruits: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
+
+    @property(FruitData)
     pear: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
     @property(FruitData)

@@ -44,8 +44,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.33330078125,
-      "y": 0.33330078125,
+      "x": 0.334088134765625,
+      "y": 0.334088134765625,
       "z": 1
     },
     "_quat": {
@@ -4405,7 +4405,9 @@
         "__id__": 120
       }
     ],
-    "_prefab": null,
+    "_prefab": {
+      "__id__": 158
+    },
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -4458,7 +4460,7 @@
       "__id__": 119
     },
     "_enabled": true,
-    "pear": [
+    "fruits": [
       {
         "__id__": 121
       },
@@ -4473,12 +4475,12 @@
       },
       {
         "__id__": 125
-      }
-    ],
-    "apple": [
+      },
       {
         "__id__": 126
-      },
+      }
+    ],
+    "pear": [
       {
         "__id__": 127
       },
@@ -4490,12 +4492,12 @@
       },
       {
         "__id__": 130
-      }
-    ],
-    "grape": [
+      },
       {
         "__id__": 131
-      },
+      }
+    ],
+    "apple": [
       {
         "__id__": 132
       },
@@ -4512,7 +4514,7 @@
         "__id__": 136
       }
     ],
-    "orange": [
+    "grape": [
       {
         "__id__": 137
       },
@@ -4527,12 +4529,12 @@
       },
       {
         "__id__": 141
-      }
-    ],
-    "watermelon": [
+      },
       {
         "__id__": 142
-      },
+      }
+    ],
+    "orange": [
       {
         "__id__": 143
       },
@@ -4544,12 +4546,12 @@
       },
       {
         "__id__": 146
-      }
-    ],
-    "banana": [
+      },
       {
         "__id__": 147
-      },
+      }
+    ],
+    "watermelon": [
       {
         "__id__": 148
       },
@@ -4561,9 +4563,83 @@
       },
       {
         "__id__": 151
+      },
+      {
+        "__id__": 152
+      }
+    ],
+    "banana": [
+      {
+        "__id__": 153
+      },
+      {
+        "__id__": 154
+      },
+      {
+        "__id__": 155
+      },
+      {
+        "__id__": 156
+      },
+      {
+        "__id__": 157
       }
     ],
     "_id": "c7O2tYdcRBRqzrjLVEO5OP"
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "b908c8e2-f935-4e69-8843-58f77bcbf5d8"
+    },
+    "audioClip": {
+      "__uuid__": "f7731b5c-9a9d-4cdc-b627-ca14f7f7ded9"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "ee94b63e-6eb7-47f8-97d4-86643357e4d6"
+    },
+    "audioClip": {
+      "__uuid__": "2dcb2419-f09c-4bf2-9d9f-de043611b64a"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "6a63c515-c644-43cb-b065-8622c106a6e1"
+    },
+    "audioClip": {
+      "__uuid__": "4f610192-f1fe-499a-bdc5-9f32d4f56398"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "45246eb1-e435-489d-be7c-eaa8522da90a"
+    },
+    "audioClip": {
+      "__uuid__": "b7df43a9-3581-466d-bb4e-8505d6ca5933"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "e81ef3a1-e5cc-4ce0-ac28-434a482871b5"
+    },
+    "audioClip": {
+      "__uuid__": "5e38d0b2-01b6-44f1-9b78-d9c57efdce14"
+    }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "f3b3eeb6-6ff2-4b1c-b30e-d7f9af643777"
+    },
+    "audioClip": {
+      "__uuid__": "09c86066-4878-4db1-8fae-9b14e4894a71"
+    }
   },
   {
     "__type__": "FruitData",
@@ -4843,5 +4919,16 @@
     "audioClip": {
       "__uuid__": "1897a35b-d48b-429b-8dc9-ad3afca951bb"
     }
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 119
+    },
+    "asset": {
+      "__uuid__": "332fd0a4-bfa2-4f38-9712-b1657cb50b86"
+    },
+    "fileId": "62aKFyoRpD+aDgoEjtPMtk",
+    "sync": false
   }
 ]
