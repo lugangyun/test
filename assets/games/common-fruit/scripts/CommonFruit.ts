@@ -39,10 +39,31 @@ export default class CommonFruit extends GameBase {
         let scene = cc.director.getScene();
         if (this.type == CommonFruitType.learning) {
             let box = scene.getChildByName("Canvas").getChildByName("learningPictureBox");
+            let controlButtons = scene.getChildByName("Canvas").getChildByName("controlButtons");
+            let nextButton = controlButtons.getChildByName("rightBtn").getComponent(cc.Button);
+            let preButton = controlButtons.getChildByName("leftBtn").getComponent(cc.Button);
             let sprite = box.getChildByName("learningPicture").getComponent(cc.Sprite);
             let label = box.getChildByName("label").getComponent(cc.Label);
-            sprite.spriteFrame = this.learningQuestion.spriteFrame;
-            label.string = this.learningQuestion.spriteFrame.name;
+            let firstSpirt =  box.getChildByName("firstPicture").getComponent(cc.Sprite);
+            if(this.questionIndex === this.questionLength -1) {
+                nextButton.interactable = false;
+            }else {
+                nextButton.interactable = true;
+            }
+            if (!this.questionIndex) {
+                preButton.interactable = false;
+                sprite.node.active = false;
+                label.node.active = false;
+                firstSpirt.node.active = true;
+                firstSpirt.spriteFrame = this.learningQuestion.spriteFrame;
+            } else {
+                preButton.interactable = true;
+                sprite.node.active = true;
+                label.node.active = true;
+                firstSpirt.node.active = false;
+                sprite.spriteFrame = this.learningQuestion.spriteFrame;
+                label.string = this.learningQuestion.spriteFrame.name;
+            }
             let audioId = cc.audioEngine.play(this.learningQuestion.audioClip, false, 1);
         }
     }
