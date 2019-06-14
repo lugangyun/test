@@ -1,4 +1,5 @@
 import ServerInfo from "../ServerInfo";
+import CustomAnimation from "../CustomAnimation";
 
 const { ccclass, property } = cc._decorator;
 
@@ -39,8 +40,9 @@ export default class ChooseBox extends cc.Component {
         })
     }
 
-    wrong() {
+    async wrong() {
         this.draw(0xff0000);
+        await CustomAnimation.shake(this.node);
     }
 
     disable() {

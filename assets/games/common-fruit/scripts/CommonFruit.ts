@@ -110,11 +110,11 @@ export default class CommonFruit extends GameBase {
         let selectTarget = chooses.children[selectIndex].getComponent(ChooseBox);
         if (this.chooseQuestion.answerIndex == selectIndex) {
             await selectTarget.right();
-            this.refresh();
         }
         else {
-            selectTarget.wrong();
+            await selectTarget.wrong();
         }
+        this.refresh()
     }
 }
 
