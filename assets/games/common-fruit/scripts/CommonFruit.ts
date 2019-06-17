@@ -2,6 +2,7 @@ import GameBase from "../../../public/scripts/GameBase";
 import ResourceDatas from "./ResourceDatas";
 import { Tools } from "../../../public/scripts/Tools";
 import ChooseBox from "../../../public/scripts/template/ChooseBox";
+import SheepRight from "../../../public/scripts/SheepRight";
 
 export default class CommonFruit extends GameBase {
 
@@ -110,11 +111,12 @@ export default class CommonFruit extends GameBase {
         let selectTarget = chooses.children[selectIndex].getComponent(ChooseBox);
         if (this.chooseQuestion.answerIndex == selectIndex) {
             await selectTarget.right();
+            await this.canvas.getChildByName("sheepRight").getComponent(SheepRight).showAsync();
         }
         else {
             await selectTarget.wrong();
         }
-        this.refresh()
+        this.nextQuestion()
     }
 }
 
