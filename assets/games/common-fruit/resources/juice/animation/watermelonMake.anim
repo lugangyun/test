@@ -1,0 +1,148 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "watermelonMake",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "watermelonBreak": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "2f1f3c2c-7355-4dd1-b8d2-8f2c21af2f1f"
+                }
+              },
+              {
+                "frame": 0.6666666666666666,
+                "value": {
+                  "__uuid__": "33577831-8918-4bd6-9730-d4bc22a62a7d"
+                }
+              },
+              {
+                "frame": 0.6833333333333333,
+                "value": {
+                  "__uuid__": "6b1eed5e-8a1b-4b43-a88a-a369bf476525"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "3a527d2e-19ab-4fee-a798-e64da04101ea"
+                }
+              },
+              {
+                "frame": 0.7166666666666667,
+                "value": {
+                  "__uuid__": "28e8c11a-bb98-4ee9-8120-508047378043"
+                }
+              },
+              {
+                "frame": 0.7333333333333333,
+                "value": {
+                  "__uuid__": "bc622ffc-b5ab-46a2-ad8a-3ec6f2688bdf"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "fc641a03-27ca-4dfd-8a1c-de2cb997f2a0"
+                }
+              },
+              {
+                "frame": 0.7666666666666667,
+                "value": {
+                  "__uuid__": "a8aa46f3-3cf0-4352-92dd-c486c4f9cd65"
+                }
+              },
+              {
+                "frame": 0.7833333333333333,
+                "value": {
+                  "__uuid__": "e4f22fa4-b98c-4f48-bd84-c3fed9d9deb8"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "juicerBack": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "juicerFore": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            }
+          ]
+        }
+      },
+      "knife": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                454,
+                -176
+              ],
+              "motionPath": [
+                [
+                  170,
+                  35,
+                  255,
+                  8,
+                  97,
+                  52
+                ]
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -1,
+                -36
+              ]
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": [
+                -25,
+                -150
+              ]
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": -49
+            },
+            {
+              "frame": 0.5,
+              "value": -34
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
