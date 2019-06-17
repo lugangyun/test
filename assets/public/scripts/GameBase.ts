@@ -37,10 +37,11 @@ export default abstract class GameBase {
     abstract refresh(): void;
 
     public updateCounter() {
-        let counterLabel = cc.director.getScene().getChildByName("Canvas")
-            .getChildByName("counter").getChildByName("label")
-            .getComponent(cc.Label);
-        counterLabel.string = (this.questionIndex + 1) + "/" + this.questionLength;
+        let counter = this.canvas.getChildByName("counter");
+        if (counter) {
+            let counterLabel = counter.getChildByName("label").getComponent(cc.Label);
+            counterLabel.string = (this.questionIndex + 1) + "/" + this.questionLength;
+        }
     }
 
     public nextQuestion() {
