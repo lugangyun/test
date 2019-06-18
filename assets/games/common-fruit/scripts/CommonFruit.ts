@@ -3,6 +3,7 @@ import ResourceDatas from "./ResourceDatas";
 import { Tools } from "../../../public/scripts/Tools";
 import ChooseBox from "../../../public/scripts/template/ChooseBox";
 import SheepRight from "../../../public/scripts/SheepRight";
+import MakeJuice from "./MakeJuice";
 
 export default class CommonFruit extends GameBase {
 
@@ -57,13 +58,15 @@ export default class CommonFruit extends GameBase {
     }
 
     start(): void {
-        let canvas = cc.director.getScene().getChildByName("Canvas");
         if (this.type == CommonFruitType.learning) {
-            let button = canvas.getChildByName("resourceButtons").children[0].getComponent(cc.Button);
+            let button = this.canvas.getChildByName("resourceButtons").children[0].getComponent(cc.Button);
             button.clickEvents[0].emit(undefined);
         }
         else if (this.type == CommonFruitType.choose) {
             this.createChooseQuestions();
+        }
+        else {
+            this.canvas.getChildByName("juice").getComponent(MakeJuice).init();
         }
     }
 
