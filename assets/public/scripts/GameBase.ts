@@ -2,6 +2,7 @@ import { ReportDetial } from "./dto/ReportDetail";
 import { Report } from "./dto/Report";
 import ServerInfo from "./ServerInfo";
 import GameTimer from "./GameTimer";
+import SettingPanel from "./SettingPanel";
 
 export default abstract class GameBase {
 
@@ -9,6 +10,7 @@ export default abstract class GameBase {
     questionIndex: number;
     questionLength: number;
     reportDetail: ReportDetial;
+    setting: any;
 
     initial(type: number) {
         GameTimer.reset();
@@ -24,6 +26,11 @@ export default abstract class GameBase {
 
     get canvas() {
         return cc.director.getScene().getChildByName("Canvas");
+    }
+
+    async showSettingPanel(setting: any) {
+        return await this.canvas.getChildByName("settingPanel")
+            .getComponent(SettingPanel).show(setting);
     }
 
     /**

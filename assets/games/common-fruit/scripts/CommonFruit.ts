@@ -57,13 +57,16 @@ export default class CommonFruit extends GameBase {
         this.questionLength = this.chooseQuestions.length;
     }
 
-    start(): void {
+    async start() {
         if (this.type == CommonFruitType.learning) {
             let button = this.canvas.getChildByName("resourceButtons").children[0].getComponent(cc.Button);
             button.clickEvents[0].emit(undefined);
         }
         else if (this.type == CommonFruitType.choose) {
             this.createChooseQuestions();
+            this.setting = await this.showSettingPanel({
+                "题目内容": ["认识水果", "吃水果"]
+            });
         }
         else {
             this.canvas.getChildByName("juice").getComponent(MakeJuice).init();
