@@ -10,13 +10,12 @@ export default class SettingPanel extends cc.Component {
     buttonDown: cc.SpriteFrame = null;
 
     async show(setting: any): Promise<any> {
-        console.log(this.buttonNormal)
         this.node.getComponent(cc.Animation).play("panelPopupAnimation");
         let content = this.node.getChildByName("content");
-        let lineHeight = content.height / Object.getOwnPropertyNames(setting).length;
         let contentDist = 40;
         let contentLineDist = 80;
-        let offsetX = 0, offsetY = this.contentY0 - contentDist;
+        let buttonOffsetX = 0, buttonOffsetY = 0;
+        let labelY = this.contentY0 - contentDist;
         for (let key in setting) {
             let labelNode = new cc.Node();
             labelNode.addComponent(cc.Label);
@@ -26,12 +25,13 @@ export default class SettingPanel extends cc.Component {
             label.fontSize = 40;
             label.string = key + "：";
             labelNode.x = this.contentX0;
-            labelNode.y = offsetY;
+            labelNode.y = labelY;
             content.addChild(labelNode);
 
             let choices: string[] = setting[key];
-            let initX = labelNode.x + labelNode.width;
-            offsetX = initX;
+            let initX = labelNode.width;
+            buttonOffsetX = initX;
+            buttonOffsetY = 0;
             choices.forEach((choice, index) => {
                 let buttonNode = new cc.Node();
                 let sprite = buttonNode.addComponent(cc.Sprite);
@@ -52,18 +52,18 @@ export default class SettingPanel extends cc.Component {
                 buttonLabel.fontSize = 30;
 
                 buttonNode.width = Math.max(choice.length * buttonLabel.fontSize + 20, 100);
-                if (offsetX + buttonNode.width + contentDist > content.width / 2) {
-                    offsetX = initX;
-                    offsetY -= contentLineDist;
+                if (buttonOffsetX + buttonNode.width + contentDist > content.width) {
+                    buttonOffsetX = initX;
+                    buttonOffsetY += contentLineDist;
                 }
-                buttonNode.y = offsetY;
-                buttonNode.x = offsetX + buttonNode.width / 2;
-                offsetX = buttonNode.x + buttonNode.width / 2 + contentDist;
+                buttonNode.y = -buttonOffsetY;
+                buttonNode.x = buttonOffsetX + buttonNode.width / 2;
+                buttonOffsetX = buttonNode.x + buttonNode.width / 2 + contentDist;
 
                 buttonNode.addChild(buttonLabelNode);
-                content.addChild(buttonNode);
+                labelNode.addChild(buttonNode);
             });
-            offsetY -= contentLineDist;
+            labelY -= contentLineDist + buttonOffsetY;
         }
     }
 
