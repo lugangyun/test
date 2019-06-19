@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "watermelonReady",
+  "_name": "准备西瓜",
   "_objFlags": 0,
   "_native": "",
   "_duration": 0.6666666666666666,
@@ -9,7 +9,8 @@
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "watermelon/watermelonBreak": {
+      "西瓜/西瓜裂开": {
+        "comps": {},
         "props": {
           "scale": [
             {
@@ -37,7 +38,8 @@
           ]
         }
       },
-      "watermelon/knife": {
+      "西瓜/水果刀": {
+        "comps": {},
         "props": {
           "scale": [
             {
@@ -65,7 +67,8 @@
           ]
         }
       },
-      "watermelon/watermelonLight1": {
+      "西瓜/西瓜竖切光": {
+        "comps": {},
         "props": {
           "active": [
             {
@@ -75,7 +78,8 @@
           ]
         }
       },
-      "watermelon/watermelonLight2": {
+      "西瓜/西瓜横切光": {
+        "comps": {},
         "props": {
           "active": [
             {

@@ -443,7 +443,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "title",
+    "_name": "标题",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -530,7 +530,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "bigBlueBox",
+    "_name": "水果选择框",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -783,7 +783,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "juice",
+    "_name": "制作水果动画",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -859,7 +859,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "choppingBoard",
+    "_name": "砧板",
     "_objFlags": 0,
     "_parent": {
       "__id__": 18
@@ -970,7 +970,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "juicerBack",
+    "_name": "榨汁机下层",
     "_objFlags": 0,
     "_parent": {
       "__id__": 18
@@ -986,7 +986,7 @@
         "__id__": 28
       }
     ],
-    "_active": false,
+    "_active": true,
     "_level": 2,
     "_components": [],
     "_prefab": null,
@@ -1036,7 +1036,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Juicer0",
+    "_name": "机身",
     "_objFlags": 0,
     "_parent": {
       "__id__": 22
@@ -1105,7 +1105,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "e3429733-1f30-4dd9-a381-1354fdae1eb9"
+      "__uuid__": "aab71daa-c96a-4a6d-8795-debda5c06ec2"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1120,13 +1120,13 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": {
-      "__uuid__": "ddfdbd98-0c7c-4d4d-8679-ba7f754f9383"
+      "__uuid__": "b6a44934-9340-41a4-9971-73a2f4034781"
     },
     "_id": "52Lc1UeyREe5kZ5h/RBcoG"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Juicer3",
+    "_name": "旋钮",
     "_objFlags": 0,
     "_parent": {
       "__id__": 22
@@ -1198,7 +1198,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "257ba460-92ea-443a-8d85-85ff2539f3b7"
+      "__uuid__": "f73d97cd-2344-4a9c-b6b7-c9d8035dbc76"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1213,7 +1213,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": {
-      "__uuid__": "ddfdbd98-0c7c-4d4d-8679-ba7f754f9383"
+      "__uuid__": "b6a44934-9340-41a4-9971-73a2f4034781"
     },
     "_id": "1a8ffAsFlPXbzicCDCnWDL"
   },
@@ -1232,7 +1232,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Juicer4",
+    "_name": "指示灯",
     "_objFlags": 0,
     "_parent": {
       "__id__": 22
@@ -1301,7 +1301,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "7278990e-6e6a-44cf-9fa6-68b97129b365"
+      "__uuid__": "30ce9d38-5fa7-413a-b638-9bbe4de1178e"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1316,13 +1316,13 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": {
-      "__uuid__": "ddfdbd98-0c7c-4d4d-8679-ba7f754f9383"
+      "__uuid__": "b6a44934-9340-41a4-9971-73a2f4034781"
     },
     "_id": "5eOGloQHJPhaoAEfAZWHrH"
   },
   {
     "__type__": "cc.Node",
-    "_name": "watermelon",
+    "_name": "西瓜",
     "_objFlags": 0,
     "_parent": {
       "__id__": 18
@@ -1391,7 +1391,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "watermelonBreak",
+    "_name": "西瓜裂开",
     "_objFlags": 0,
     "_parent": {
       "__id__": 30
@@ -1481,7 +1481,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "knife",
+    "_name": "水果刀",
     "_objFlags": 0,
     "_parent": {
       "__id__": 30
@@ -1652,7 +1652,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "watermelonLight1",
+    "_name": "西瓜竖切光",
     "_objFlags": 0,
     "_parent": {
       "__id__": 30
@@ -1742,7 +1742,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "watermelonLight2",
+    "_name": "西瓜横切光",
     "_objFlags": 0,
     "_parent": {
       "__id__": 30
@@ -1832,7 +1832,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "juicerFore",
+    "_name": "榨汁机上层",
     "_objFlags": 0,
     "_parent": {
       "__id__": 18
@@ -1845,7 +1845,7 @@
         "__id__": 44
       }
     ],
-    "_active": false,
+    "_active": true,
     "_level": 2,
     "_components": [],
     "_prefab": null,
@@ -1895,7 +1895,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Juicer1",
+    "_name": "前玻璃",
     "_objFlags": 0,
     "_parent": {
       "__id__": 41
@@ -1964,7 +1964,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "26087b5c-ed26-43d9-916d-5bb39a0218b2"
+      "__uuid__": "d67284b0-1136-4a96-a391-fad23837e28c"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -1979,13 +1979,13 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": {
-      "__uuid__": "ddfdbd98-0c7c-4d4d-8679-ba7f754f9383"
+      "__uuid__": "b6a44934-9340-41a4-9971-73a2f4034781"
     },
     "_id": "fbiTxeimxLgZCGz10M7T1F"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Juicer2",
+    "_name": "盖子",
     "_objFlags": 0,
     "_parent": {
       "__id__": 41
@@ -2057,7 +2057,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8d4e3490-7831-4394-8ee1-c48fedfa2ac8"
+      "__uuid__": "3a370379-5c48-4591-ad65-a060c763cc2c"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -2072,7 +2072,7 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": {
-      "__uuid__": "ddfdbd98-0c7c-4d4d-8679-ba7f754f9383"
+      "__uuid__": "b6a44934-9340-41a4-9971-73a2f4034781"
     },
     "_id": "15Y6XC7apDxqJiZ9lyytkz"
   },

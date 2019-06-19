@@ -4,22 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>Juicer0.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,-24}</string>
-                <key>spriteSize</key>
-                <string>{345,617}</string>
-                <key>spriteSourceSize</key>
-                <string>{345,665}</string>
-                <key>textureRect</key>
-                <string>{{1,1},{345,617}}</string>
-                <key>textureRotated</key>
-                <true/>
-            </dict>
-            <key>Juicer1.png</key>
+            <key>前玻璃.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -34,22 +19,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>Juicer2.png</key>
-            <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
-                <string>{0,243}</string>
-                <key>spriteSize</key>
-                <string>{345,179}</string>
-                <key>spriteSourceSize</key>
-                <string>{345,665}</string>
-                <key>textureRect</key>
-                <string>{{620,1},{345,179}}</string>
-                <key>textureRotated</key>
-                <false/>
-            </dict>
-            <key>Juicer3.png</key>
+            <key>旋钮.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -64,7 +34,37 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>Juicer4.png</key>
+            <key>机身.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,-24}</string>
+                <key>spriteSize</key>
+                <string>{345,617}</string>
+                <key>spriteSourceSize</key>
+                <string>{345,665}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{345,617}}</string>
+                <key>textureRotated</key>
+                <true/>
+            </dict>
+            <key>盖子.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,243}</string>
+                <key>spriteSize</key>
+                <string>{345,179}</string>
+                <key>spriteSourceSize</key>
+                <string>{345,665}</string>
+                <key>textureRect</key>
+                <string>{{620,1},{345,179}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>红色指示灯.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -79,7 +79,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>Juicer5.png</key>
+            <key>绿色指示灯.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -104,13 +104,13 @@
             <key>premultiplyAlpha</key>
             <false/>
             <key>realTextureFileName</key>
-            <string>juicer.png</string>
+            <string>榨汁机.png</string>
             <key>size</key>
             <string>{966,496}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f523d33fba10913769fa8951d8c0c753:1e6f3b1abe182c98408b789fe219e8e8:cef02b1a63d112da016b836be304613a$</string>
+            <string>$TexturePacker:SmartUpdate:2ec34a211f3bb32297626d03cfb9e2a1:87fc5890cb3e85fe9f5d279bbc26645b:5a2a7b67c15843886f574c4f590dc1d8$</string>
             <key>textureFileName</key>
-            <string>juicer.png</string>
+            <string>榨汁机.png</string>
         </dict>
     </dict>
 </plist>
