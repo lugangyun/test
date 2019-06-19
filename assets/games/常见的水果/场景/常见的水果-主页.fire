@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.33330078125,
-      "y": 0.33330078125,
+      "x": 0.528118896484375,
+      "y": 0.528118896484375,
       "z": 1
     },
     "_quat": {
@@ -298,7 +298,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "layout",
+    "_name": "主页按钮",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -368,7 +368,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Learning",
+    "_name": "学一学",
     "_objFlags": 0,
     "_parent": {
       "__id__": 7
@@ -565,7 +565,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Choose",
+    "_name": "选一选",
     "_objFlags": 0,
     "_parent": {
       "__id__": 7
@@ -762,7 +762,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Playing",
+    "_name": "玩一玩",
     "_objFlags": 0,
     "_parent": {
       "__id__": 7

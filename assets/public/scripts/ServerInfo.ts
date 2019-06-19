@@ -62,7 +62,7 @@ export default class ServerInfo {
 
 	public async getTrainingInfo() {
 		if (this.setting.defaultGame) {
-			this.trainingName = "调试页面";
+			this.trainingName = this.setting.defaultGame;
 			this.trainingNameEn = this.setting.defaultGame;
 		}
 		else {

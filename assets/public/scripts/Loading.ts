@@ -19,7 +19,7 @@ export default class NewClass extends cc.Component {
         let info = ServerInfo.getInstance();
         await info.getSetting();
         await info.getTrainingInfo();
-        cc.director.loadScene(info.trainingNameEn + "Index");
+        cc.director.loadScene(info.trainingName + "-主页");
     }
 
     // LIFE-CYCLE CALLBACKS:

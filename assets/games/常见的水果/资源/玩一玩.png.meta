@@ -1,15 +1,15 @@
 {
   "ver": "2.2.0",
-  "uuid": "c85870d5-cb3a-4cff-9cee-a7bb59b2bd82",
+  "uuid": "450fc722-28aa-401f-b2a8-15650e51b046",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "subMetas": {
-    "choose": {
+    "玩一玩": {
       "ver": "1.0.4",
-      "uuid": "4a018807-d7ff-4415-8b0d-d1f2fff5f2be",
-      "rawTextureUuid": "c85870d5-cb3a-4cff-9cee-a7bb59b2bd82",
+      "uuid": "d16c8980-a756-456c-97ed-98581887b514",
+      "rawTextureUuid": "450fc722-28aa-401f-b2a8-15650e51b046",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
