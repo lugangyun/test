@@ -65,8 +65,7 @@ export default class CommonFruit extends GameBase {
         else if (this.type == CommonFruitType.choose) {
             this.createChooseQuestions();
             this.setting = await this.showSettingPanel({
-                "题目内容": ["认识水果", "吃水果", "一二三", "一二三", "一二三", "一二三", "一二三"],
-                "测试内容": ["123", "一二三"],
+                "题目内容": ["认识水果", "吃水果"]
             });
         }
         else {
