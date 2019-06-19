@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "35009e7c-aa25-47d2-9813-80fc2026161b",
+  "uuid": "a89fb10c-feb8-44ab-bc30-062b00fa2f8b",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,8 +8,8 @@
   "subMetas": {
     "西瓜裂开": {
       "ver": "1.0.4",
-      "uuid": "2f82c07a-26dd-433a-8fdd-8c62aea9b5bc",
-      "rawTextureUuid": "35009e7c-aa25-47d2-9813-80fc2026161b",
+      "uuid": "96a342da-5daf-4eed-8606-5e13fcc8a3b3",
+      "rawTextureUuid": "a89fb10c-feb8-44ab-bc30-062b00fa2f8b",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

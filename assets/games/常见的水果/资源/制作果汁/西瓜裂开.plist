@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>watermelonBreak01.png</key>
+            <key>西瓜裂开01.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -19,7 +19,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>watermelonBreak02.png</key>
+            <key>西瓜裂开02.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -34,7 +34,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>watermelonBreak03.png</key>
+            <key>西瓜裂开03.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -49,7 +49,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>watermelonBreak04.png</key>
+            <key>西瓜裂开04.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -64,7 +64,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak05.png</key>
+            <key>西瓜裂开05.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -79,7 +79,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak06.png</key>
+            <key>西瓜裂开06.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -94,7 +94,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak07.png</key>
+            <key>西瓜裂开07.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -109,7 +109,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak08.png</key>
+            <key>西瓜裂开08.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -124,7 +124,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak09.png</key>
+            <key>西瓜裂开09.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -139,7 +139,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak10.png</key>
+            <key>西瓜裂开10.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -154,7 +154,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak11.png</key>
+            <key>西瓜裂开11.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -169,7 +169,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak12.png</key>
+            <key>西瓜裂开12.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -184,7 +184,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak13.png</key>
+            <key>西瓜裂开13.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -199,7 +199,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak14.png</key>
+            <key>西瓜裂开14.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -214,7 +214,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak15.png</key>
+            <key>西瓜裂开15.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -229,7 +229,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak16.png</key>
+            <key>西瓜裂开16.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -244,7 +244,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak17.png</key>
+            <key>西瓜裂开17.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -259,7 +259,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>watermelonBreak18.png</key>
+            <key>西瓜裂开18.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -284,13 +284,13 @@
             <key>premultiplyAlpha</key>
             <false/>
             <key>realTextureFileName</key>
-            <string>watermelonBreak.png</string>
+            <string>西瓜裂开.png</string>
             <key>size</key>
             <string>{2027,1638}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:fcc6141668e3ee5702fbf3fe0ea395da:ff18645ad8218e7f1b5112cf51a2acc2:5096dd804b5f8996b3aa197d6c42564a$</string>
+            <string>$TexturePacker:SmartUpdate:f138ac940f56097a02ae63328347e8cd:ff18645ad8218e7f1b5112cf51a2acc2:780cfd269209d2819383c70b18a8fb0d$</string>
             <key>textureFileName</key>
-            <string>watermelonBreak.png</string>
+            <string>西瓜裂开.png</string>
         </dict>
     </dict>
 </plist>
