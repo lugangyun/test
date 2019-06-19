@@ -9,8 +9,13 @@ export default class SettingPanel extends cc.Component {
     @property(cc.SpriteFrame)
     buttonDown: cc.SpriteFrame = null;
 
+    private textNormalColor = cc.color(0, 177, 78);
+    private textDownColor = cc.color(255, 255, 255);
+
+    private resolve: (value: any) => void;
+    private settingResult: any = {};
+
     async show(setting: any): Promise<any> {
-        this.node.getComponent(cc.Animation).play("panelPopupAnimation");
         let content = this.node.getChildByName("content");
         let contentDist = 40;
         let contentLineDist = 80;
@@ -18,6 +23,7 @@ export default class SettingPanel extends cc.Component {
         let labelY = this.contentY0 - contentDist;
         for (let key in setting) {
             let labelNode = new cc.Node();
+            labelNode.name = key;
             labelNode.addComponent(cc.Label);
             labelNode.color = cc.color(0x10, 0x79, 0xa5);
             labelNode.anchorX = 0;
@@ -34,6 +40,7 @@ export default class SettingPanel extends cc.Component {
             buttonOffsetY = 0;
             choices.forEach((choice, index) => {
                 let buttonNode = new cc.Node();
+                buttonNode.name = choice;
                 let sprite = buttonNode.addComponent(cc.Sprite);
                 sprite.type = cc.Sprite.Type.SLICED;
                 sprite.spriteFrame = this.buttonNormal;
@@ -46,7 +53,8 @@ export default class SettingPanel extends cc.Component {
                 button.zoomScale = 0.8;
 
                 let buttonLabelNode = new cc.Node();
-                buttonLabelNode.color = cc.color(0, 177, 78);
+                buttonLabelNode.name = choice;
+                buttonLabelNode.color = this.textNormalColor;
                 let buttonLabel = buttonLabelNode.addComponent(cc.Label);
                 buttonLabel.string = choice;
                 buttonLabel.fontSize = 30;
@@ -62,9 +70,47 @@ export default class SettingPanel extends cc.Component {
 
                 buttonNode.addChild(buttonLabelNode);
                 labelNode.addChild(buttonNode);
+
+                let clickEvent = new cc.Component.EventHandler();
+                clickEvent.target = this.node;
+                clickEvent.component = "SettingPanel";
+                clickEvent.handler = "settingButtonClick";
+                button.clickEvents.push(clickEvent);
             });
             labelY -= contentLineDist + buttonOffsetY;
         }
+        this.node.getComponent(cc.Animation).play("panelPopupAnimation");
+        return new Promise((resolve, reject) => {
+            this.resolve = resolve;
+        });
+    }
+
+    settingButtonClick(event: cc.Event.EventTouch, args: string) {
+        let settingNode = <cc.Node>event.currentTarget;
+        settingNode.parent.children.forEach((node) => {
+            let nodeSprite = node.getComponent(cc.Sprite);
+            let labelNode = node.getChildByName(node.name);
+            let initWidth = node.width;
+            if (node != settingNode) {
+                nodeSprite.spriteFrame = this.buttonNormal;
+                labelNode.color = this.textNormalColor;
+            }
+            else {
+                nodeSprite.spriteFrame = this.buttonDown;
+                labelNode.color = this.textDownColor;
+                this.settingResult[settingNode.parent.name] = settingNode.name;
+            }
+            node.width = initWidth;
+        });
+    }
+
+    okButtonClick(event: cc.Event.EventTouch, args: string) {
+        let animation = this.node.getComponent(cc.Animation);
+        animation.play("panelCloseAnimation");
+        animation.on(cc.Animation.EventType.FINISHED, () => {
+            animation.off(cc.Animation.EventType.FINISHED);
+            this.resolve(this.settingResult);
+        });
     }
 
     private get contentX0() {
