@@ -24,7 +24,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 40
+      "__id__": 46
     },
     "_opacity": 255,
     "_color": {
@@ -201,6 +201,26 @@
       },
       {
         "__id__": 39
+      }
+    ],
+    "error": [
+      {
+        "__id__": 40
+      },
+      {
+        "__id__": 41
+      },
+      {
+        "__id__": 42
+      },
+      {
+        "__id__": 43
+      },
+      {
+        "__id__": 44
+      },
+      {
+        "__id__": 45
       }
     ],
     "_id": ""
@@ -537,6 +557,48 @@
     "audioClip": {
       "__uuid__": "1897a35b-d48b-429b-8dc9-ad3afca951bb"
     }
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "0ba5f59b-3a2b-40da-a841-94c07c85f7c9"
+    },
+    "audioClip": null
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "ff473148-8743-49b5-8090-739fa7b8a63f"
+    },
+    "audioClip": null
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "789bbaae-740e-4a78-b177-552a581ce623"
+    },
+    "audioClip": null
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "89a22b52-892a-4178-b1eb-8e9edd3d5865"
+    },
+    "audioClip": null
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "1d1bdac6-19e8-4626-a550-b857c47ba764"
+    },
+    "audioClip": null
+  },
+  {
+    "__type__": "FruitData",
+    "spriteFrame": {
+      "__uuid__": "59046e03-16ff-4b58-b940-5d6ff17f005a"
+    },
+    "audioClip": null
   },
   {
     "__type__": "cc.PrefabInfo",

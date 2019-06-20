@@ -32,6 +32,9 @@ export default class ResourceDatas extends cc.Component {
     @property(FruitData)
     banana: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
 
+    @property(FruitData)
+    error: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
+
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
