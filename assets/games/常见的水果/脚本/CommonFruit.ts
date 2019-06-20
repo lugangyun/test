@@ -38,7 +38,7 @@ export default class CommonFruit extends GameBase {
         this.refresh();
     }
 
-    createChooseQuestions() {
+    createChooseFruitQuestions() {
         this.chooseQuestions = [];
         let questionsSource = this.datas.fruits.concat(this.datas.fruits);
         questionsSource = Tools.disorder(questionsSource);
@@ -57,16 +57,43 @@ export default class CommonFruit extends GameBase {
         this.questionLength = this.chooseQuestions.length;
     }
 
+    createChooseActionQuestions() {
+        this.chooseQuestions = [];
+        let questionsSource = [
+            { name: "apple", right: "用水将苹果洗干净", wrong: "不洗直接吃苹果" },
+            { name: "banana", right: "用手拿住香蕉蒂，将香蕉放入口中", wrong: "不剥皮吃香蕉" },
+            { name: "pear", right: "用小刀将梨削皮", wrong: "不洗直接吃梨" },
+            { name: "orange", right: "将橘子剥皮", wrong: "不剥皮直接吃橘子" },
+            { name: "grape", right: "摘下一颗，剥皮放入口中", wrong: "不冲洗直接吃葡萄" },
+            { name: "watermelon", right: "双手捧起西瓜，咬一口", wrong: "不切开直接吃" },
+        ]
+        for (let data of questionsSource) {
+            let right = this.datas[data.name].find(x => x.spriteFrame.name == data.right).spriteFrame;
+            let wrong = this.datas.error.find(x => x.spriteFrame.name == data.wrong).spriteFrame;
+            let questionSprites = [right, wrong];
+            questionSprites = Tools.disorder(questionSprites);
+            this.chooseQuestions.push({
+                text: "下图中，哪种吃水果的方式是正确的？",
+                sprites: questionSprites,
+                answerIndex: questionSprites.findIndex(x => x == right)
+            });
+        }
+        this.questionLength = this.chooseQuestions.length;
+    }
+
     async start() {
         if (this.type == CommonFruitType.learning) {
             let button = this.canvas.getChildByName("resourceButtons").children[0].getComponent(cc.Button);
             button.clickEvents[0].emit(undefined);
         }
         else if (this.type == CommonFruitType.choose) {
-            this.createChooseQuestions();
             this.setting = await this.showSettingPanel({
                 "题目内容": ["认识水果", "吃水果"]
             });
+            switch (this.setting["题目内容"]) {
+                case "认识水果": this.createChooseFruitQuestions(); break;
+                case "吃水果": this.createChooseActionQuestions(); break;
+            }
         }
         else {
             this.canvas.getChildByName("制作果汁").getComponent(MakeJuice).init();

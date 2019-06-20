@@ -12,14 +12,14 @@ export default abstract class GameBase {
     reportDetail: ReportDetial;
     setting: any;
 
-    initial(type: number) {
+    async initial(type: number) {
         GameTimer.reset();
         GameTimer.start();
         this.questionIndex = 0;
         this.saveReportInput.details = [];
         this.reportDetail = new ReportDetial();
         this.type = type;
-        this.start();
+        await this.start();
         this.updateCounter();
         this.refresh();
     }
@@ -36,7 +36,7 @@ export default abstract class GameBase {
     /**
      * 游戏自身的初始化操作
      */
-    abstract start(): void;
+    abstract async start(): Promise<any>;
 
     /**
      * 游戏的题目刷新操作
