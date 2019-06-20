@@ -16,6 +16,7 @@ export default class SettingPanel extends cc.Component {
     private settingResult: any = {};
 
     async show(setting: any): Promise<any> {
+        this.node.active = true;
         let content = this.node.getChildByName("content");
         let contentDist = 40;
         let contentLineDist = 80;
@@ -109,6 +110,7 @@ export default class SettingPanel extends cc.Component {
         animation.play("panelCloseAnimation");
         animation.on(cc.Animation.EventType.FINISHED, () => {
             animation.off(cc.Animation.EventType.FINISHED);
+            this.node.active = false;
             this.resolve(this.settingResult);
         });
     }
