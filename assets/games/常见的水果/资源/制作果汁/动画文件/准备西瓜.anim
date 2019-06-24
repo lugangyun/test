@@ -88,6 +88,16 @@
             }
           ]
         }
+      },
+      "西瓜/手指戳": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": []
+          }
+        },
+        "props": {
+          "position": []
+        }
       }
     }
   },
