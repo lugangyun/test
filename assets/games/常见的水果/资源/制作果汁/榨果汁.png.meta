@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a161a4b2-e699-44e0-a850-4b88abb7ef41",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "榨果汁": {
+      "ver": "1.0.4",
+      "uuid": "cf838d3f-a941-40ff-a284-245375ddca5d",
+      "rawTextureUuid": "a161a4b2-e699-44e0-a850-4b88abb7ef41",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1882,
+      "height": 275,
+      "rawWidth": 1882,
+      "rawHeight": 275,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

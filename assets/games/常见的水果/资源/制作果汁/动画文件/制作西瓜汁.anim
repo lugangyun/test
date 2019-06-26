@@ -3,7 +3,7 @@
   "_name": "制作西瓜汁",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 4.516666666666667,
+  "_duration": 4.5,
   "sample": 60,
   "speed": 0.4,
   "wrapMode": 1,
@@ -1152,7 +1152,7 @@
               ]
             },
             {
-              "frame": 4.516666666666667,
+              "frame": 4.333333333333333,
               "value": [
                 -319,
                 0
@@ -1163,8 +1163,107 @@
             {
               "frame": 4,
               "value": 255
+            },
+            {
+              "frame": 4.333333333333333,
+              "value": 0
             }
           ]
+        }
+      },
+      "砧板": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": []
+          }
+        },
+        "props": {
+          "position": [
+            {
+              "frame": 4,
+              "value": [
+                0,
+                -58
+              ]
+            },
+            {
+              "frame": 4.333333333333333,
+              "value": [
+                -313,
+                -58
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 4,
+              "value": 255
+            },
+            {
+              "frame": 4.333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "榨汁机上层/榨果汁底": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 4.366666666666666,
+                "value": {
+                  "__uuid__": "611dbad1-e8e3-4636-9ae4-74fb7b4e85cb"
+                }
+              },
+              {
+                "frame": 4.383333333333334,
+                "value": {
+                  "__uuid__": "8f5ce8be-2a12-4c5f-b33c-2fc1ec900de9"
+                }
+              },
+              {
+                "frame": 4.4,
+                "value": {
+                  "__uuid__": "b8c40f83-8728-4a0d-9912-107d598df77b"
+                }
+              },
+              {
+                "frame": 4.416666666666667,
+                "value": {
+                  "__uuid__": "c1b3cf05-aca0-45f5-ab24-0e496f27cd65"
+                }
+              },
+              {
+                "frame": 4.433333333333334,
+                "value": {
+                  "__uuid__": "5a3ab9dd-a7f1-45f5-b643-600d5e223753"
+                }
+              },
+              {
+                "frame": 4.45,
+                "value": {
+                  "__uuid__": "4b0741ed-0fea-4e9a-b00a-b98c6d2ff15b"
+                }
+              },
+              {
+                "frame": 4.466666666666667,
+                "value": {
+                  "__uuid__": "4a239260-5530-4f22-81a3-6d153ab63ffa"
+                }
+              },
+              {
+                "frame": 4.483333333333333,
+                "value": {
+                  "__uuid__": "1eaf62ab-852c-47ae-a68b-cba656529de0"
+                }
+              }
+            ]
+          }
+        },
+        "props": {
+          "position": [],
+          "opacity": []
         }
       }
     }

@@ -98,6 +98,17 @@
         "props": {
           "position": []
         }
+      },
+      "榨汁机上层/榨果汁转动线": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": []
+          }
+        },
+        "props": {
+          "position": [],
+          "opacity": []
+        }
       }
     }
   },
