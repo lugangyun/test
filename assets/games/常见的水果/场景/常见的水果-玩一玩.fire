@@ -17,10 +17,10 @@
         "__id__": 2
       },
       {
-        "__id__": 186
+        "__id__": 174
       },
       {
-        "__id__": 188
+        "__id__": 176
       }
     ],
     "_active": true,
@@ -47,8 +47,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.48194444444444445,
-      "y": 0.48194444444444445,
+      "x": 0.48194444444444356,
+      "y": 0.48194444444444356,
       "z": 1
     },
     "_quat": {
@@ -89,17 +89,17 @@
         "__id__": 18
       },
       {
-        "__id__": 154
+        "__id__": 142
       },
       {
-        "__id__": 161
+        "__id__": 149
       }
     ],
     "_active": true,
     "_level": 0,
     "_components": [
       {
-        "__id__": 185
+        "__id__": 173
       }
     ],
     "_prefab": null,
@@ -546,29 +546,29 @@
         "__id__": 14
       },
       {
+        "__id__": 120
+      },
+      {
+        "__id__": 124
+      },
+      {
+        "__id__": 128
+      },
+      {
         "__id__": 132
       },
       {
         "__id__": 136
-      },
-      {
-        "__id__": 140
-      },
-      {
-        "__id__": 144
-      },
-      {
-        "__id__": 148
       }
     ],
     "_active": false,
     "_level": 1,
     "_components": [
       {
-        "__id__": 152
+        "__id__": 140
       },
       {
-        "__id__": 153
+        "__id__": 141
       }
     ],
     "_prefab": null,
@@ -805,32 +805,32 @@
         "__id__": 32
       },
       {
-        "__id__": 47
+        "__id__": 35
       },
       {
-        "__id__": 54
+        "__id__": 42
       },
       {
-        "__id__": 68
+        "__id__": 56
       },
       {
-        "__id__": 85
+        "__id__": 73
       },
       {
-        "__id__": 100
+        "__id__": 88
       },
       {
-        "__id__": 115
+        "__id__": 103
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 130
+        "__id__": 118
       },
       {
-        "__id__": 131
+        "__id__": 119
       }
     ],
     "_prefab": null,
@@ -1444,21 +1444,6 @@
     "_children": [
       {
         "__id__": 33
-      },
-      {
-        "__id__": 35
-      },
-      {
-        "__id__": 37
-      },
-      {
-        "__id__": 39
-      },
-      {
-        "__id__": 43
-      },
-      {
-        "__id__": 45
       }
     ],
     "_active": true,
@@ -1517,7 +1502,7 @@
       "__id__": 32
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -1599,535 +1584,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "西瓜汁底部1",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 32
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 36
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 140,
-      "height": 65
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 177,
-      "y": 26,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "ce4v6lsZlEb755oGWXJLYT"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 35
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "0cb43bf0-edfe-4014-aafb-e7911ce78b54"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_state": 0,
-    "_atlas": null,
-    "_id": "99F+8MR3BE8LiXQMFXyJnu"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "西瓜裂开",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 32
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 38
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 454,
-      "height": 269
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -47,
-      "y": -7,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "a5Irux+dBPoaXlqTmeX3om"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 37
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "df0245e0-20c3-4f4a-af99-649f6a8de97e"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": false,
-    "_state": 0,
-    "_atlas": {
-      "__uuid__": "fad47ccb-3d05-431a-bc93-392843cb53cb"
-    },
-    "_id": "9fKTlIL2NArJgqVqLvPmIZ"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "水果刀",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 32
-    },
-    "_children": [],
-    "_active": true,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 40
-      },
-      {
-        "__id__": 41
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 48,
-      "height": 316
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 431,
-      "y": -114,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": -49,
-    "_rotationY": -49,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0.414693242656239,
-      "w": 0.9099612708765432
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "c7hYqI1TdOsrEwp3jZTuby"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 39
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "fa4964d9-caf9-4de5-85b2-613eeaf725f7"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_state": 0,
-    "_atlas": null,
-    "_id": "4aOnc1XSNKaYF/gTVdxtUJ"
-  },
-  {
-    "__type__": "cc.Button",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 39
-    },
-    "_enabled": true,
-    "duration": 0.1,
-    "zoomScale": 1.2,
-    "clickEvents": [
-      {
-        "__id__": 42
-      }
-    ],
-    "_N$interactable": true,
-    "_N$enableAutoGrayEffect": false,
-    "_N$transition": 3,
-    "transition": 3,
-    "_N$normalColor": {
-      "__type__": "cc.Color",
-      "r": 214,
-      "g": 214,
-      "b": 214,
-      "a": 255
-    },
-    "_N$pressedColor": {
-      "__type__": "cc.Color",
-      "r": 211,
-      "g": 211,
-      "b": 211,
-      "a": 255
-    },
-    "pressedColor": {
-      "__type__": "cc.Color",
-      "r": 211,
-      "g": 211,
-      "b": 211,
-      "a": 255
-    },
-    "_N$hoverColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "hoverColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_N$disabledColor": {
-      "__type__": "cc.Color",
-      "r": 124,
-      "g": 124,
-      "b": 124,
-      "a": 255
-    },
-    "_N$normalSprite": null,
-    "_N$pressedSprite": null,
-    "pressedSprite": null,
-    "_N$hoverSprite": null,
-    "hoverSprite": null,
-    "_N$disabledSprite": null,
-    "_N$target": null,
-    "_id": "ddM2ZseMhPRJonCTkwzYQB"
-  },
-  {
-    "__type__": "cc.ClickEvent",
-    "target": {
-      "__id__": 18
-    },
-    "component": "",
-    "_componentId": "00c69y7QDBJUJI/ifGXsm7U",
-    "handler": "make",
-    "customEventData": "西瓜"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "西瓜横爆汁",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 32
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 44
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 189,
-      "height": 47
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -174,
-      "y": -55,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "3c29HdG1pGQrIbGTmGMKcc"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 43
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "5e84a0ce-cd90-4387-8e9e-777dea971f5a"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": false,
-    "_state": 0,
-    "_atlas": {
-      "__uuid__": "ca777b7a-19dc-44e3-8709-e6c10099ed07"
-    },
-    "_id": "57v7Fea5hLk5XB9xazPpYc"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "西瓜横爆汁2",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 32
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 46
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 189,
-      "height": 47
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -174,
-      "y": -55,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "groupIndex": 0,
-    "_id": "67+bfkMI5BkLoQJAe4/bfO"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 45
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "5e84a0ce-cd90-4387-8e9e-777dea971f5a"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": false,
-    "_state": 0,
-    "_atlas": {
-      "__uuid__": "ca777b7a-19dc-44e3-8709-e6c10099ed07"
-    },
-    "_id": "0fwp35SOVK1KNYJo89JkPr"
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "香蕉",
     "_objFlags": 0,
     "_parent": {
@@ -2135,13 +1591,13 @@
     },
     "_children": [
       {
-        "__id__": 48
+        "__id__": 36
       },
       {
-        "__id__": 50
+        "__id__": 38
       },
       {
-        "__id__": 52
+        "__id__": 40
       }
     ],
     "_active": true,
@@ -2197,14 +1653,14 @@
     "_name": "香蕉剥开",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 47
+      "__id__": 35
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 49
+        "__id__": 37
       }
     ],
     "_prefab": null,
@@ -2257,7 +1713,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 48
+      "__id__": 36
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2287,14 +1743,14 @@
     "_name": "手2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 47
+      "__id__": 35
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 51
+        "__id__": 39
       }
     ],
     "_prefab": null,
@@ -2347,7 +1803,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 50
+      "__id__": 38
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2375,14 +1831,14 @@
     "_name": "手1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 47
+      "__id__": 35
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 53
+        "__id__": 41
       }
     ],
     "_prefab": null,
@@ -2435,7 +1891,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 52
+      "__id__": 40
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2467,22 +1923,22 @@
     },
     "_children": [
       {
-        "__id__": 55
+        "__id__": 43
       },
       {
-        "__id__": 57
+        "__id__": 45
       },
       {
-        "__id__": 59
+        "__id__": 47
       },
       {
-        "__id__": 61
+        "__id__": 49
       },
       {
-        "__id__": 63
+        "__id__": 51
       },
       {
-        "__id__": 65
+        "__id__": 53
       }
     ],
     "_active": true,
@@ -2538,14 +1994,14 @@
     "_name": "榨汁机黄闪动",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 42
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 56
+        "__id__": 44
       }
     ],
     "_prefab": null,
@@ -2598,7 +2054,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 55
+      "__id__": 43
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2626,14 +2082,14 @@
     "_name": "榨果汁底",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 42
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 58
+        "__id__": 46
       }
     ],
     "_prefab": null,
@@ -2686,7 +2142,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 57
+      "__id__": 45
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2716,14 +2172,14 @@
     "_name": "榨果汁转动线",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 42
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 60
+        "__id__": 48
       }
     ],
     "_prefab": null,
@@ -2776,7 +2232,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 59
+      "__id__": 47
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2806,14 +2262,14 @@
     "_name": "西瓜切好",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 62
+        "__id__": 50
       }
     ],
     "_prefab": null,
@@ -2866,7 +2322,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 61
+      "__id__": 49
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2894,14 +2350,14 @@
     "_name": "前玻璃",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 42
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 64
+        "__id__": 52
       }
     ],
     "_prefab": null,
@@ -2954,7 +2410,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 63
+      "__id__": 51
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -2984,17 +2440,17 @@
     "_name": "盖子",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 54
+      "__id__": 42
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 66
+        "__id__": 54
       },
       {
-        "__id__": 67
+        "__id__": 55
       }
     ],
     "_prefab": null,
@@ -3047,7 +2503,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 65
+      "__id__": 53
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3077,7 +2533,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 65
+      "__id__": 53
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -3094,28 +2550,28 @@
     },
     "_children": [
       {
+        "__id__": 57
+      },
+      {
+        "__id__": 59
+      },
+      {
+        "__id__": 61
+      },
+      {
+        "__id__": 63
+      },
+      {
+        "__id__": 65
+      },
+      {
+        "__id__": 67
+      },
+      {
         "__id__": 69
       },
       {
         "__id__": 71
-      },
-      {
-        "__id__": 73
-      },
-      {
-        "__id__": 75
-      },
-      {
-        "__id__": 77
-      },
-      {
-        "__id__": 79
-      },
-      {
-        "__id__": 81
-      },
-      {
-        "__id__": 83
       }
     ],
     "_active": false,
@@ -3171,14 +2627,14 @@
     "_name": "果汁杯大3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 70
+        "__id__": 58
       }
     ],
     "_prefab": null,
@@ -3231,7 +2687,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 69
+      "__id__": 57
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3261,14 +2717,14 @@
     "_name": "果汁杯大2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 72
+        "__id__": 60
       }
     ],
     "_prefab": null,
@@ -3321,7 +2777,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 71
+      "__id__": 59
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3351,14 +2807,14 @@
     "_name": "果汁杯大1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 74
+        "__id__": 62
       }
     ],
     "_prefab": null,
@@ -3411,7 +2867,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 73
+      "__id__": 61
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3441,14 +2897,14 @@
     "_name": "果汁杯普通3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 76
+        "__id__": 64
       }
     ],
     "_prefab": null,
@@ -3501,7 +2957,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 75
+      "__id__": 63
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3531,14 +2987,14 @@
     "_name": "果汁杯普通2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 78
+        "__id__": 66
       }
     ],
     "_prefab": null,
@@ -3591,7 +3047,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 77
+      "__id__": 65
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3621,14 +3077,14 @@
     "_name": "果汁杯普通1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 80
+        "__id__": 68
       }
     ],
     "_prefab": null,
@@ -3681,7 +3137,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 79
+      "__id__": 67
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3711,14 +3167,14 @@
     "_name": "果汁杯三角2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 70
       }
     ],
     "_prefab": null,
@@ -3771,7 +3227,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 81
+      "__id__": 69
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3801,14 +3257,14 @@
     "_name": "果汁杯三角1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 68
+      "__id__": 56
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 84
+        "__id__": 72
       }
     ],
     "_prefab": null,
@@ -3861,7 +3317,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 83
+      "__id__": 71
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -3895,25 +3351,25 @@
     },
     "_children": [
       {
+        "__id__": 74
+      },
+      {
+        "__id__": 76
+      },
+      {
+        "__id__": 78
+      },
+      {
+        "__id__": 80
+      },
+      {
+        "__id__": 82
+      },
+      {
+        "__id__": 84
+      },
+      {
         "__id__": 86
-      },
-      {
-        "__id__": 88
-      },
-      {
-        "__id__": 90
-      },
-      {
-        "__id__": 92
-      },
-      {
-        "__id__": 94
-      },
-      {
-        "__id__": 96
-      },
-      {
-        "__id__": 98
       }
     ],
     "_active": false,
@@ -3969,14 +3425,14 @@
     "_name": "果汁杯星星1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 87
+        "__id__": 75
       }
     ],
     "_prefab": null,
@@ -4029,7 +3485,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 86
+      "__id__": 74
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4057,14 +3513,14 @@
     "_name": "果汁杯星星2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 89
+        "__id__": 77
       }
     ],
     "_prefab": null,
@@ -4117,7 +3573,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 88
+      "__id__": 76
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4145,14 +3601,14 @@
     "_name": "果汁杯星星3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 91
+        "__id__": 79
       }
     ],
     "_prefab": null,
@@ -4205,7 +3661,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 90
+      "__id__": 78
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4233,14 +3689,14 @@
     "_name": "果汁杯星星5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 93
+        "__id__": 81
       }
     ],
     "_prefab": null,
@@ -4293,7 +3749,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 92
+      "__id__": 80
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4321,14 +3777,14 @@
     "_name": "果汁杯星星7",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 95
+        "__id__": 83
       }
     ],
     "_prefab": null,
@@ -4381,7 +3837,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 94
+      "__id__": 82
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4409,14 +3865,14 @@
     "_name": "果汁杯星星8",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 97
+        "__id__": 85
       }
     ],
     "_prefab": null,
@@ -4469,7 +3925,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 96
+      "__id__": 84
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4497,14 +3953,14 @@
     "_name": "果汁杯星星9",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 85
+      "__id__": 73
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 99
+        "__id__": 87
       }
     ],
     "_prefab": null,
@@ -4557,7 +4013,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 98
+      "__id__": 86
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4589,25 +4045,25 @@
     },
     "_children": [
       {
+        "__id__": 89
+      },
+      {
+        "__id__": 91
+      },
+      {
+        "__id__": 93
+      },
+      {
+        "__id__": 95
+      },
+      {
+        "__id__": 97
+      },
+      {
+        "__id__": 99
+      },
+      {
         "__id__": 101
-      },
-      {
-        "__id__": 103
-      },
-      {
-        "__id__": 105
-      },
-      {
-        "__id__": 107
-      },
-      {
-        "__id__": 109
-      },
-      {
-        "__id__": 111
-      },
-      {
-        "__id__": 113
       }
     ],
     "_active": false,
@@ -4663,14 +4119,14 @@
     "_name": "果汁杯星星1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 102
+        "__id__": 90
       }
     ],
     "_prefab": null,
@@ -4723,7 +4179,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 101
+      "__id__": 89
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4751,14 +4207,14 @@
     "_name": "果汁杯星星2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 104
+        "__id__": 92
       }
     ],
     "_prefab": null,
@@ -4811,7 +4267,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 103
+      "__id__": 91
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4839,14 +4295,14 @@
     "_name": "果汁杯星星3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 106
+        "__id__": 94
       }
     ],
     "_prefab": null,
@@ -4899,7 +4355,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 105
+      "__id__": 93
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -4927,14 +4383,14 @@
     "_name": "果汁杯星星5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 108
+        "__id__": 96
       }
     ],
     "_prefab": null,
@@ -4987,7 +4443,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 107
+      "__id__": 95
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5015,14 +4471,14 @@
     "_name": "果汁杯星星7",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 110
+        "__id__": 98
       }
     ],
     "_prefab": null,
@@ -5075,7 +4531,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 109
+      "__id__": 97
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5103,14 +4559,14 @@
     "_name": "果汁杯星星8",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 112
+        "__id__": 100
       }
     ],
     "_prefab": null,
@@ -5163,7 +4619,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 111
+      "__id__": 99
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5191,14 +4647,14 @@
     "_name": "果汁杯星星9",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 100
+      "__id__": 88
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 114
+        "__id__": 102
       }
     ],
     "_prefab": null,
@@ -5251,7 +4707,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 113
+      "__id__": 101
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5283,25 +4739,25 @@
     },
     "_children": [
       {
+        "__id__": 104
+      },
+      {
+        "__id__": 106
+      },
+      {
+        "__id__": 108
+      },
+      {
+        "__id__": 110
+      },
+      {
+        "__id__": 112
+      },
+      {
+        "__id__": 114
+      },
+      {
         "__id__": 116
-      },
-      {
-        "__id__": 118
-      },
-      {
-        "__id__": 120
-      },
-      {
-        "__id__": 122
-      },
-      {
-        "__id__": 124
-      },
-      {
-        "__id__": 126
-      },
-      {
-        "__id__": 128
       }
     ],
     "_active": false,
@@ -5357,14 +4813,14 @@
     "_name": "果汁杯星星1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 117
+        "__id__": 105
       }
     ],
     "_prefab": null,
@@ -5417,7 +4873,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 116
+      "__id__": 104
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5445,14 +4901,14 @@
     "_name": "果汁杯星星2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 119
+        "__id__": 107
       }
     ],
     "_prefab": null,
@@ -5505,7 +4961,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 118
+      "__id__": 106
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5533,14 +4989,14 @@
     "_name": "果汁杯星星3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 121
+        "__id__": 109
       }
     ],
     "_prefab": null,
@@ -5593,7 +5049,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 120
+      "__id__": 108
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5621,14 +5077,14 @@
     "_name": "果汁杯星星5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 123
+        "__id__": 111
       }
     ],
     "_prefab": null,
@@ -5681,7 +5137,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 122
+      "__id__": 110
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5709,14 +5165,14 @@
     "_name": "果汁杯星星7",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 125
+        "__id__": 113
       }
     ],
     "_prefab": null,
@@ -5769,7 +5225,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 124
+      "__id__": 112
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5797,14 +5253,14 @@
     "_name": "果汁杯星星8",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 127
+        "__id__": 115
       }
     ],
     "_prefab": null,
@@ -5857,7 +5313,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 126
+      "__id__": 114
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -5885,14 +5341,14 @@
     "_name": "果汁杯星星9",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 115
+      "__id__": 103
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 129
+        "__id__": 117
       }
     ],
     "_prefab": null,
@@ -5945,7 +5401,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 128
+      "__id__": 116
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -6018,10 +5474,10 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 133
+        "__id__": 121
       },
       {
-        "__id__": 134
+        "__id__": 122
       }
     ],
     "_prefab": null,
@@ -6074,7 +5530,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 132
+      "__id__": 120
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -6102,14 +5558,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 132
+      "__id__": 120
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 135
+        "__id__": 123
       }
     ],
     "_N$interactable": true,
@@ -6189,10 +5645,10 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 137
+        "__id__": 125
       },
       {
-        "__id__": 138
+        "__id__": 126
       }
     ],
     "_prefab": null,
@@ -6245,7 +5701,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 136
+      "__id__": 124
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -6273,14 +5729,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 136
+      "__id__": 124
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 139
+        "__id__": 127
       }
     ],
     "_N$interactable": true,
@@ -6360,10 +5816,10 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 141
+        "__id__": 129
       },
       {
-        "__id__": 142
+        "__id__": 130
       }
     ],
     "_prefab": null,
@@ -6416,7 +5872,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 140
+      "__id__": 128
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -6444,14 +5900,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 140
+      "__id__": 128
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 143
+        "__id__": 131
       }
     ],
     "_N$interactable": true,
@@ -6531,10 +5987,10 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 145
+        "__id__": 133
       },
       {
-        "__id__": 146
+        "__id__": 134
       }
     ],
     "_prefab": null,
@@ -6587,7 +6043,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 144
+      "__id__": 132
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -6615,14 +6071,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 144
+      "__id__": 132
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 147
+        "__id__": 135
       }
     ],
     "_N$interactable": true,
@@ -6702,10 +6158,10 @@
     "_level": 2,
     "_components": [
       {
-        "__id__": 149
+        "__id__": 137
       },
       {
-        "__id__": 150
+        "__id__": 138
       }
     ],
     "_prefab": null,
@@ -6758,7 +6214,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 136
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -6786,14 +6242,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 136
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 151
+        "__id__": 139
       }
     ],
     "_N$interactable": true,
@@ -6928,20 +6384,20 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 155
+        "__id__": 143
       },
       {
-        "__id__": 156
+        "__id__": 144
       },
       {
-        "__id__": 157
+        "__id__": 145
       },
       {
-        "__id__": 159
+        "__id__": 147
       }
     ],
     "_prefab": {
-      "__id__": 160
+      "__id__": 148
     },
     "_opacity": 255,
     "_color": {
@@ -6992,7 +6448,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 154
+      "__id__": 142
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -7020,7 +6476,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 154
+      "__id__": 142
     },
     "_enabled": true,
     "alignMode": 1,
@@ -7047,14 +6503,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 154
+      "__id__": 142
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 158
+        "__id__": 146
       }
     ],
     "_N$interactable": true,
@@ -7115,7 +6571,7 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 154
+      "__id__": 142
     },
     "component": "",
     "_componentId": "27108lEkWtIupC89z4hGiYf",
@@ -7127,7 +6583,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 154
+      "__id__": 142
     },
     "_enabled": true,
     "_id": "d2U3kKaXhFmIBxjGU2EqkN"
@@ -7135,7 +6591,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 154
+      "__id__": 142
     },
     "asset": {
       "__uuid__": "0df5ffb8-8343-4862-8543-e536b410b6ac"
@@ -7152,24 +6608,24 @@
     },
     "_children": [
       {
-        "__id__": 162
+        "__id__": 150
       },
       {
-        "__id__": 165
+        "__id__": 153
       }
     ],
     "_active": false,
     "_level": 1,
     "_components": [
       {
-        "__id__": 182
+        "__id__": 170
       },
       {
-        "__id__": 183
+        "__id__": 171
       }
     ],
     "_prefab": {
-      "__id__": 184
+      "__id__": 172
     },
     "_opacity": 255,
     "_color": {
@@ -7220,18 +6676,18 @@
     "_name": "mask",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 161
+      "__id__": 149
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 163
+        "__id__": 151
       }
     ],
     "_prefab": {
-      "__id__": 164
+      "__id__": 152
     },
     "_opacity": 125,
     "_color": {
@@ -7282,7 +6738,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 162
+      "__id__": 150
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -7308,7 +6764,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 161
+      "__id__": 149
     },
     "asset": {
       "__uuid__": "710b762c-199f-461b-ae37-3e8472f6d111"
@@ -7321,31 +6777,31 @@
     "_name": "panel",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 161
+      "__id__": 149
     },
     "_children": [
       {
-        "__id__": 166
+        "__id__": 154
       },
       {
-        "__id__": 169
+        "__id__": 157
       },
       {
-        "__id__": 174
+        "__id__": 162
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 179
+        "__id__": 167
       },
       {
-        "__id__": 180
+        "__id__": 168
       }
     ],
     "_prefab": {
-      "__id__": 181
+      "__id__": 169
     },
     "_opacity": 255,
     "_color": {
@@ -7396,18 +6852,18 @@
     "_name": "label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 165
+      "__id__": 153
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 167
+        "__id__": 155
       }
     ],
     "_prefab": {
-      "__id__": 168
+      "__id__": 156
     },
     "_opacity": 255,
     "_color": {
@@ -7458,7 +6914,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 166
+      "__id__": 154
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -7483,7 +6939,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 161
+      "__id__": 149
     },
     "asset": {
       "__uuid__": "710b762c-199f-461b-ae37-3e8472f6d111"
@@ -7496,21 +6952,21 @@
     "_name": "yesButton",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 165
+      "__id__": 153
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 170
+        "__id__": 158
       },
       {
-        "__id__": 171
+        "__id__": 159
       }
     ],
     "_prefab": {
-      "__id__": 173
+      "__id__": 161
     },
     "_opacity": 255,
     "_color": {
@@ -7561,7 +7017,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 169
+      "__id__": 157
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -7589,14 +7045,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 169
+      "__id__": 157
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 172
+        "__id__": 160
       }
     ],
     "_N$interactable": true,
@@ -7657,7 +7113,7 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 161
+      "__id__": 149
     },
     "component": "",
     "_componentId": "32df5XzZURGho58otYrOGKL",
@@ -7667,7 +7123,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 161
+      "__id__": 149
     },
     "asset": {
       "__uuid__": "710b762c-199f-461b-ae37-3e8472f6d111"
@@ -7680,21 +7136,21 @@
     "_name": "noButton",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 165
+      "__id__": 153
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 175
+        "__id__": 163
       },
       {
-        "__id__": 176
+        "__id__": 164
       }
     ],
     "_prefab": {
-      "__id__": 178
+      "__id__": 166
     },
     "_opacity": 255,
     "_color": {
@@ -7745,7 +7201,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 174
+      "__id__": 162
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -7773,14 +7229,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 174
+      "__id__": 162
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 0.8,
     "clickEvents": [
       {
-        "__id__": 177
+        "__id__": 165
       }
     ],
     "_N$interactable": true,
@@ -7841,7 +7297,7 @@
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 161
+      "__id__": 149
     },
     "component": "",
     "_componentId": "32df5XzZURGho58otYrOGKL",
@@ -7851,7 +7307,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 161
+      "__id__": 149
     },
     "asset": {
       "__uuid__": "710b762c-199f-461b-ae37-3e8472f6d111"
@@ -7864,7 +7320,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 165
+      "__id__": 153
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -7892,7 +7348,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 165
+      "__id__": 153
     },
     "_enabled": true,
     "_defaultClip": null,
@@ -7910,7 +7366,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 161
+      "__id__": 149
     },
     "asset": {
       "__uuid__": "710b762c-199f-461b-ae37-3e8472f6d111"
@@ -7923,7 +7379,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 161
+      "__id__": 149
     },
     "_enabled": true,
     "_id": "8cNzeQ7YlGRa+igdUR+/eE"
@@ -7933,7 +7389,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 161
+      "__id__": 149
     },
     "_enabled": true,
     "_id": "2ah4KjzydHAZXiMR1aZCXP"
@@ -7941,7 +7397,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 161
+      "__id__": 149
     },
     "asset": {
       "__uuid__": "710b762c-199f-461b-ae37-3e8472f6d111"
@@ -7978,7 +7434,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 187
+        "__id__": 175
       }
     ],
     "_prefab": null,
@@ -8031,7 +7487,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 186
+      "__id__": 174
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
@@ -8064,7 +7520,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 189
+        "__id__": 177
       }
     ],
     "_prefab": null,
@@ -8117,7 +7573,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 188
+      "__id__": 176
     },
     "_enabled": true,
     "_srcBlendFactor": 770,

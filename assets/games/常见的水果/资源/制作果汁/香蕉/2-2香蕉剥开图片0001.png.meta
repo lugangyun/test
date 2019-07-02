@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "06077762-4651-41b0-92bd-5c213f6ecf71",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "2-2香蕉剥开图片0001": {
+      "ver": "1.0.4",
+      "uuid": "4ff94560-603a-4440-b4e0-5cc97c2f24a9",
+      "rawTextureUuid": "06077762-4651-41b0-92bd-5c213f6ecf71",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -9.5,
+      "offsetY": 24,
+      "trimX": 45,
+      "trimY": 24,
+      "width": 151,
+      "height": 264,
+      "rawWidth": 260,
+      "rawHeight": 360,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
