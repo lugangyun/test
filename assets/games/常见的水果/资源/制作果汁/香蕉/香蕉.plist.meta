@@ -1,0 +1,56 @@
+{
+  "ver": "1.2.4",
+  "uuid": "b8fd8fc1-40e8-43f5-bf71-c970f8fd9008",
+  "rawTextureUuid": "a44ee17b-16d7-4193-a4bd-6d06c327b84c",
+  "size": {
+    "width": 260,
+    "height": 720
+  },
+  "type": "Texture Packer",
+  "subMetas": {
+    "2-2香蕉剥开图片0002.png": {
+      "ver": "1.0.4",
+      "uuid": "2990005a-846c-4382-b99e-9e93c027da2b",
+      "rawTextureUuid": "a44ee17b-16d7-4193-a4bd-6d06c327b84c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 260,
+      "height": 360,
+      "rawWidth": 260,
+      "rawHeight": 360,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    },
+    "2-2香蕉剥开图片0001.png": {
+      "ver": "1.0.4",
+      "uuid": "24271257-a15b-4720-ab04-85867710d662",
+      "rawTextureUuid": "a44ee17b-16d7-4193-a4bd-6d06c327b84c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 360,
+      "width": 260,
+      "height": 360,
+      "rawWidth": 260,
+      "rawHeight": 360,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}
