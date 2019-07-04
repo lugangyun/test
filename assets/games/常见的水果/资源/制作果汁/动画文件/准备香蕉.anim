@@ -1,0 +1,36 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "准备香蕉",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "西瓜/手指戳": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": []
+          }
+        },
+        "props": {
+          "position": []
+        }
+      },
+      "榨汁机上层/榨果汁转动线": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": []
+          }
+        },
+        "props": {
+          "position": [],
+          "opacity": []
+        }
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "bd8f0b54-e687-4bb6-a06d-02111b2467f4",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "西瓜切好": {
+      "ver": "1.0.4",
+      "uuid": "afd5a074-0d86-458f-9e8e-88275906ab4b",
+      "rawTextureUuid": "bd8f0b54-e687-4bb6-a06d-02111b2467f4",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 303,
+      "height": 453,
+      "rawWidth": 303,
+      "rawHeight": 453,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

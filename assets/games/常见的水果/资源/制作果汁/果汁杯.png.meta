@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "4a18dbc1-d97c-47f2-894b-08b8b6c7308f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "果汁杯": {
+      "ver": "1.0.4",
+      "uuid": "4f67e25b-e70c-4a0f-bee9-9105e3e9d67f",
+      "rawTextureUuid": "4a18dbc1-d97c-47f2-894b-08b8b6c7308f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 918,
+      "height": 1671,
+      "rawWidth": 918,
+      "rawHeight": 1671,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

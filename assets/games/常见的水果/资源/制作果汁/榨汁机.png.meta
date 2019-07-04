@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "f4e59cad-cb66-491d-b334-dae60ae42c48",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "榨汁机": {
+      "ver": "1.0.4",
+      "uuid": "4596e355-3c76-4a47-af87-f7baaed139e1",
+      "rawTextureUuid": "f4e59cad-cb66-491d-b334-dae60ae42c48",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 1,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 966,
+      "height": 494,
+      "rawWidth": 966,
+      "rawHeight": 496,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

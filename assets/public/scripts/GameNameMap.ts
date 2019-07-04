@@ -1,7 +1,7 @@
-import CommonFruit from "../../games/common-fruit/scripts/CommonFruit";
+import CommonFruit from "../../games/常见的水果/脚本/CommonFruit";
 
 export default class GameNameMap {
     public static readonly map = {
-        "CommonFruit": CommonFruit
+        "常见的水果": CommonFruit
     }
 }

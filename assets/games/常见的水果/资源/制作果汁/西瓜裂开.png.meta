@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "a89fb10c-feb8-44ab-bc30-062b00fa2f8b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "西瓜裂开": {
+      "ver": "1.0.4",
+      "uuid": "96a342da-5daf-4eed-8606-5e13fcc8a3b3",
+      "rawTextureUuid": "a89fb10c-feb8-44ab-bc30-062b00fa2f8b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 2,
+      "width": 2024,
+      "height": 1634,
+      "rawWidth": 2027,
+      "rawHeight": 1638,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "8d7f50b5-c567-4ced-8c48-230320ce92f1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "西瓜留下来汁水2": {
+      "ver": "1.0.4",
+      "uuid": "ce13428f-9cb6-4792-9dcb-93e3a2a4a9ad",
+      "rawTextureUuid": "8d7f50b5-c567-4ced-8c48-230320ce92f1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 323,
+      "height": 125,
+      "rawWidth": 323,
+      "rawHeight": 125,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

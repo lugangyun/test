@@ -30,7 +30,7 @@ export default class ClosePanel extends cc.Component {
     }
 
     yesButtonClick() {
-        cc.director.loadScene(ServerInfo.getInstance().trainingNameEn + "Index");
+        cc.director.loadScene(ServerInfo.getInstance().trainingNameEn + "-主页");
     }
 
     // update (dt) {}
