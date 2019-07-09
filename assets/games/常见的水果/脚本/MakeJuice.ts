@@ -4,53 +4,59 @@ const { ccclass, property } = cc._decorator;
 export default class MakeJuice extends cc.Component {
 
     @property(cc.Node)
-    videoPlayer: cc.Node = null;
-
-    @property(cc.Node)
     fruitBox: cc.Node = null;
 
     @property(cc.Node)
     glassBox: cc.Node = null;
 
-    private currentData: { name: string, time: number[] };
+    private currentFruit: string;
+    private currentPlayerNode: cc.Node;
 
-    private videoEndTime: number;
     private videoEndHandle: () => void;
 
+    private getPlayerComponent(nodeName: string) {
+        this.currentPlayerNode = this.node.getChildByName(nodeName);
+        return this.currentPlayerNode.getComponent(cc.VideoPlayer);
+    }
+
     async ready(event: cc.Event.EventTouch, args: string) {
-        let fruit = event.target.name;
+        this.currentFruit = event.target.name;
         await this.showBox(BoxType.fruit, false);
-        let playerComponent = this.videoPlayer.getComponent(cc.VideoPlayer);
-        let data = this.videoDatas.find(x => x.name == fruit);
-        this.currentData = data;
-        playerComponent.currentTime = data.time[0];
-        this.videoEndTime = data.time[1];
+        let playerComponent = this.getPlayerComponent(this.currentFruit);
         this.videoEndHandle = async () => {
-            playerComponent.pause();
             await this.showVideoPlayer(false);
+            playerComponent.stop();
             this.showBox(BoxType.glass, true);
         };
         await this.showVideoPlayer(true);
         playerComponent.play();
     }
 
+    private glassRepeat = 0;
     async showGlass(event: cc.Event.EventTouch, args: string) {
-        let glassIndex = +args;
+        let glassIndex = args;
         await this.showBox(BoxType.glass, false);
-        let playerComponent = this.videoPlayer.getComponent(cc.VideoPlayer);
-        playerComponent.currentTime = this.currentData.time[glassIndex];
-        this.videoEndTime = this.currentData.time[glassIndex + 1];
+        let playerComponent = this.getPlayerComponent(this.currentFruit + "杯" + glassIndex);
+
         this.videoEndHandle = async () => {
-            playerComponent.pause();
-            await this.showVideoPlayer(false);
-            this.showBox(BoxType.fruit, true);
+            if (this.glassRepeat < 5) {
+                this.glassRepeat++;
+                playerComponent.currentTime = 0;
+                playerComponent.play();
+            }
+            else {
+                this.glassRepeat = 0;
+                await this.showVideoPlayer(false);
+                playerComponent.stop();
+                this.showBox(BoxType.fruit, true);
+            }
         }
         await this.showVideoPlayer(true);
         playerComponent.play();
     }
 
     async showVideoPlayer(show: boolean) {
-        let animation = this.videoPlayer.getComponent(cc.Animation);
+        let animation = this.currentPlayerNode.getComponent(cc.Animation);
         animation.play(show ? "播放器弹出" : "播放器收起");
         return new Promise((resolve, reject) => {
             animation.on(cc.Animation.EventType.FINISHED, () => {
@@ -61,10 +67,9 @@ export default class MakeJuice extends cc.Component {
     }
 
     async videoComplete(target: cc.VideoPlayer, eventType: cc.VideoPlayer.EventType) {
-        // if (eventType == cc.VideoPlayer.EventType.STOPPED) {
-        //     this.videoPlayer.active = false;
-        //     await this.showFruitBox(true);
-        // }
+        if (eventType == cc.VideoPlayer.EventType.COMPLETED) {
+            this.videoEndHandle();
+        }
     }
 
     private async showBox(boxType: BoxType, show: boolean) {
@@ -89,40 +94,15 @@ export default class MakeJuice extends cc.Component {
         });
     }
 
-    private videoDatas = [
-        {
-            name: "西瓜",
-            time: [0, 8.8, 9.2, 9.6, 10]
-        },
-        {
-            name: "香蕉",
-            time: [11, 20, 20.4, 20.8, 21.2]
-        },
-        {
-            name: "苹果",
-            time: [21.2, 30.4, 30.8, 31.2, 31.6]
-        },
-        {
-            name: "梨",
-            time: [31.6, 41.8, 42.2, 42.6, 43]
-        },
-        {
-            name: "橘子",
-            time: [43, 52, 52.4, 52.8, 53.2]
-        },
-        {
-            name: "葡萄",
-            time: [53.2, 62.8, 63.2, 63.6]
-        }
-    ]
-
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
     start() {
-        this.videoPlayer.active = true;
-        this.videoPlayer.scale = 0;
+        this.node.children.forEach((node) => {
+            node.active = true;
+            node.scale = 0;
+        });
         this.fruitBox.children.forEach((node) => {
             let button = node.getComponent(cc.Button);
             if (button) {
@@ -148,14 +128,7 @@ export default class MakeJuice extends cc.Component {
         this.showBox(BoxType.fruit, true);
     }
 
-    update(dt) {
-        if (this.videoPlayer.active) {
-            let video = this.videoPlayer.getComponent(cc.VideoPlayer);
-            if (video.isPlaying() && video.currentTime >= this.videoEndTime) {
-                this.videoEndHandle();
-            }
-        }
-    }
+    // update(dt) {}
 }
 
 enum BoxType {
