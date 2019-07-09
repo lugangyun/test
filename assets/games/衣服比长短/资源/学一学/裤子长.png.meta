@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "ec819d34-71ff-4ffe-9c0c-227a1939b089",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "裤子长": {
+      "ver": "1.0.4",
+      "uuid": "95115777-ac5e-47f4-bbac-a5c36c9ceb03",
+      "rawTextureUuid": "ec819d34-71ff-4ffe-9c0c-227a1939b089",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 98,
+      "trimY": 26,
+      "width": 154,
+      "height": 298,
+      "rawWidth": 350,
+      "rawHeight": 350,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "5e88d9af-48ff-4002-a72a-cc529c3cb1c5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "衣服短": {
+      "ver": "1.0.4",
+      "uuid": "b6dac43f-f131-44a2-8c77-4d77f42f0e34",
+      "rawTextureUuid": "5e88d9af-48ff-4002-a72a-cc529c3cb1c5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 31,
+      "trimY": 79,
+      "width": 288,
+      "height": 192,
+      "rawWidth": 350,
+      "rawHeight": 350,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

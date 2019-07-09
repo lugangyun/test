@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "e1c880cf-38a7-4b12-b43c-4a63d7e4e91b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "裙子长": {
+      "ver": "1.0.4",
+      "uuid": "6b691d93-d39c-4740-a152-23c6f6d6196b",
+      "rawTextureUuid": "e1c880cf-38a7-4b12-b43c-4a63d7e4e91b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 37,
+      "trimY": 42,
+      "width": 276,
+      "height": 266,
+      "rawWidth": 350,
+      "rawHeight": 350,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
