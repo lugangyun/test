@@ -96,7 +96,7 @@ export default class CommonFruit extends GameBase {
             }
         }
         else {
-            this.canvas.getChildByName("制作果汁").getComponent(MakeJuice).init();
+            // this.canvas.getChildByName("制作果汁").getComponent(MakeJuice).init();
         }
     }
 
