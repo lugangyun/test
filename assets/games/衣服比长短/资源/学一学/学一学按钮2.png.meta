@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "3a2f0070-0945-432b-aea6-469c2e0bbd83",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "学一学按钮2": {
+      "ver": "1.0.4",
+      "uuid": "41cc61d4-0ad5-4109-95e2-6f66b75cf365",
+      "rawTextureUuid": "3a2f0070-0945-432b-aea6-469c2e0bbd83",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 126,
+      "height": 126,
+      "rawWidth": 126,
+      "rawHeight": 126,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

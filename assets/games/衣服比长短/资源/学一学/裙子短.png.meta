@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "11f08994-7521-48ad-b4b2-559c67fb8a9d",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "裙子短": {
+      "ver": "1.0.4",
+      "uuid": "9958da87-7ba9-4698-a381-107820cc8746",
+      "rawTextureUuid": "11f08994-7521-48ad-b4b2-559c67fb8a9d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 58,
+      "trimY": 101,
+      "width": 234,
+      "height": 148,
+      "rawWidth": 350,
+      "rawHeight": 350,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

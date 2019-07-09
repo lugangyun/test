@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "2df28518-2cc7-4005-8984-d48f618b3ca8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "短袜": {
+      "ver": "1.0.4",
+      "uuid": "05851f0a-c8c1-4e8a-b340-155d86c3745b",
+      "rawTextureUuid": "2df28518-2cc7-4005-8984-d48f618b3ca8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -6.5,
+      "offsetY": -26,
+      "trimX": 168,
+      "trimY": 230,
+      "width": 451,
+      "height": 392,
+      "rawWidth": 800,
+      "rawHeight": 800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

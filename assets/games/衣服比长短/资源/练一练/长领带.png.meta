@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "bc13bb5a-a7f4-4c9d-8ccb-41d522260294",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "长领带": {
+      "ver": "1.0.4",
+      "uuid": "26aa3682-642f-412b-919d-10fc79e8be06",
+      "rawTextureUuid": "bc13bb5a-a7f4-4c9d-8ccb-41d522260294",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 292,
+      "trimY": 69,
+      "width": 216,
+      "height": 663,
+      "rawWidth": 800,
+      "rawHeight": 800,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
