@@ -45,8 +45,7 @@ export default class SettingPanel extends cc.Component {
                 let sprite = buttonNode.addComponent(cc.Sprite);
                 sprite.type = cc.Sprite.Type.SLICED;
                 sprite.spriteFrame = this.buttonNormal;
-                buttonNode.addComponent(cc.Button);
-                let button = buttonNode.getComponent(cc.Button);
+                let button = buttonNode.addComponent(cc.Button);
                 button.normalSprite = this.buttonNormal;
                 button.pressedSprite = this.buttonDown;
                 button.transition = cc.Button.Transition.SCALE;
@@ -77,6 +76,14 @@ export default class SettingPanel extends cc.Component {
                 clickEvent.component = "SettingPanel";
                 clickEvent.handler = "settingButtonClick";
                 button.clickEvents.push(clickEvent);
+
+                if (index == 0) {
+                    let initWidth = buttonNode.width;
+                    sprite.spriteFrame = this.buttonDown;
+                    buttonLabelNode.color = this.textDownColor;
+                    this.settingResult[key] = choice;
+                    buttonNode.width = initWidth;
+                }
             });
             labelY -= contentLineDist + buttonOffsetY;
         }
