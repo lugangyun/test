@@ -149,8 +149,14 @@ export default class CommonFruit extends GameBase {
         else {
             await selectTarget.wrong();
         }
-        this.nextQuestion()
     }
+
+    public guideSwitch() {
+        if (this.type == CommonFruitType.choose) {
+            let guideNode = this.canvas.getChildByName("questionTitle");
+            guideNode.active = !guideNode.active;
+        }
+    };
 }
 
 enum CommonFruitType {

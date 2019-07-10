@@ -43,6 +43,16 @@ export default abstract class GameBase {
      */
     abstract refresh(): void;
 
+    /**
+     * 引导语开关
+     */
+    public guideSwitch() { };
+
+    /**
+     * 播放引导语
+     */
+    public guideReplay() { };
+
     public updateCounter() {
         let counter = this.canvas.getChildByName("counter");
         if (counter) {

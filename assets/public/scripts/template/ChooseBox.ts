@@ -28,6 +28,11 @@ export default class ChooseBox extends cc.Component {
         checkMark.scale = 0;
         this.clickCallback = clickCallback;
         this.thisObject = thisObject;
+        let animation = this.getComponent(cc.Animation);
+        animation.play("popup");
+        animation.on(cc.Animation.EventType.FINISHED, () => {
+            this.getComponent(cc.Button).interactable = true;
+        });
     }
 
     setImage(spriteFrame: cc.SpriteFrame) {
@@ -37,6 +42,7 @@ export default class ChooseBox extends cc.Component {
 
     async right() {
         return new Promise((resolve, reject) => {
+            this.getComponent(cc.Button).interactable = false;
             this.draw(0x00e600);
             let animation = this.node.getChildByName("checkMark").getComponent(cc.Animation);
             animation.play("checkMark");
@@ -47,6 +53,7 @@ export default class ChooseBox extends cc.Component {
 
     async wrong() {
         return new Promise((resolve, reject) => {
+            this.getComponent(cc.Button).interactable = false;
             this.draw(0xff0000);
             CustomAnimation.shake(this.node);
             let audioId = cc.audioEngine.play(this.wrongAudio, false, 1);
@@ -56,6 +63,7 @@ export default class ChooseBox extends cc.Component {
 
     disable() {
         this.draw(0x959595);
+        this.getComponent(cc.Button).interactable = false;
     }
 
     draw(color: number) {
