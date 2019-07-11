@@ -25,9 +25,7 @@ export default class BottomControlButton extends cc.Component {
 
     // onLoad () {}
 
-    start() {
-        console.log(ServerInfo.getInstance());
-    }
+    // start() { }
 
     // update (dt) {}
 }

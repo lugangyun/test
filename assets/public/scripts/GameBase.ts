@@ -44,14 +44,14 @@ export default abstract class GameBase {
     abstract refresh(): void;
 
     /**
-     * 引导语开关
+     * 引导语开关（可作为开关，也可以直接设置状态）
      */
-    public guideSwitch() { };
+    public guideSwitch(isShow?: boolean) { };
 
     /**
      * 播放引导语
      */
-    public guideReplay() { };
+    public async guideReplay() { };
 
     public updateCounter() {
         let counter = this.canvas.getChildByName("counter");

@@ -4,6 +4,7 @@ import { Tools } from "../../../public/scripts/Tools";
 import ChooseBox from "../../../public/scripts/template/ChooseBox";
 import SheepRight from "../../../public/scripts/SheepRight";
 import MakeJuice from "./MakeJuice";
+import AudioHelper from "../../../public/scripts/AudioHelper";
 
 export default class CommonFruit extends GameBase {
 
@@ -21,7 +22,12 @@ export default class CommonFruit extends GameBase {
         return this.learningQuestions[this.questionIndex];
     }
 
-    chooseQuestions: { text: string, sprites: cc.SpriteFrame[], answerIndex: number }[] = [];
+    chooseQuestions: {
+        text: string,
+        audio: cc.AudioClip[],
+        sprites: cc.SpriteFrame[],
+        answerIndex: number
+    }[] = [];
     get chooseQuestion() {
         return this.chooseQuestions[this.questionIndex];
     }
@@ -50,6 +56,7 @@ export default class CommonFruit extends GameBase {
             questionSprites = Tools.disorder(questionSprites);
             this.chooseQuestions.push({
                 text: "请找出" + data.spriteFrame.name,
+                audio: [this.datas.tipAudios.find(x => x.name == "请找出").audioClip, data.audioClip],
                 sprites: questionSprites,
                 answerIndex: questionSprites.findIndex(x => x == data.spriteFrame)
             });
@@ -74,6 +81,7 @@ export default class CommonFruit extends GameBase {
             questionSprites = Tools.disorder(questionSprites);
             this.chooseQuestions.push({
                 text: "下图中，哪种吃水果的方式是正确的？",
+                audio: [this.datas.tipAudios.find(x => x.name == "下图中，哪种吃水果的方式是正确的").audioClip],
                 sprites: questionSprites,
                 answerIndex: questionSprites.findIndex(x => x == right)
             });
@@ -87,6 +95,7 @@ export default class CommonFruit extends GameBase {
             button.clickEvents[0].emit(undefined);
         }
         else if (this.type == CommonFruitType.choose) {
+            this.guideSwitch(false);
             this.setting = await this.showSettingPanel({
                 "题目内容": ["认识水果", "吃水果"]
             });
@@ -94,9 +103,7 @@ export default class CommonFruit extends GameBase {
                 case "认识水果": this.createChooseFruitQuestions(); break;
                 case "吃水果": this.createChooseActionQuestions(); break;
             }
-        }
-        else {
-            // this.canvas.getChildByName("制作果汁").getComponent(MakeJuice).init();
+            this.guideSwitch(true);
         }
     }
 
@@ -131,6 +138,7 @@ export default class CommonFruit extends GameBase {
                 chooses.children[index].getChildByName("image")
                     .getComponent(cc.Sprite).spriteFrame = spriteFrame;
             })
+            AudioHelper.playQueenAsync(this.chooseQuestion.audio);
         }
     }
 
@@ -151,10 +159,16 @@ export default class CommonFruit extends GameBase {
         }
     }
 
-    public guideSwitch() {
+    public guideSwitch(isShow?: boolean) {
         if (this.type == CommonFruitType.choose) {
             let guideNode = this.canvas.getChildByName("questionTitle");
-            guideNode.active = !guideNode.active;
+            guideNode.active = isShow === undefined ? !guideNode.active : isShow;
+        }
+    };
+
+    public async guideReplay() {
+        if (this.type == CommonFruitType.choose) {
+            await AudioHelper.playQueenAsync(this.chooseQuestion.audio);
         }
     };
 }

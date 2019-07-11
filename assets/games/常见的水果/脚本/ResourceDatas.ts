@@ -8,8 +8,19 @@ var FruitData = cc.Class({
     }
 })
 
+var TipAudio = cc.Class({
+    name: "TipAudio",
+    properties: {
+        name: cc.String,
+        audioClip: { type: cc.AudioClip, default: null }
+    }
+});
+
 @ccclass
 export default class ResourceDatas extends cc.Component {
+
+    @property(TipAudio)
+    tipAudios: { name: string, audioClip: cc.AudioClip }[] = [];
 
     @property(FruitData)
     fruits: { spriteFrame: cc.SpriteFrame, audioClip: cc.AudioClip }[] = [];
