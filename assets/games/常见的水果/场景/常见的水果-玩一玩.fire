@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.8670464409722223,
-      "y": 0.8670464409722223,
+      "x": 0.7722222222222223,
+      "y": 0.7722222222222223,
       "z": 1
     },
     "_quat": {
@@ -5293,6 +5293,15 @@
     },
     "glassBox": {
       "__id__": 34
+    },
+    "chooseFruitAudio": {
+      "__uuid__": "4dcc3d7c-72aa-4360-b9cb-1d90e016aab4"
+    },
+    "chooseGlassAudio": {
+      "__uuid__": "c5bd0390-972a-464b-b193-15cfb054da26"
+    },
+    "doneAudio": {
+      "__uuid__": "0eff8f67-d48f-4b83-97c2-d0748cb773f7"
     },
     "_id": "3eiqnNP15H+YAi1SHwYXk0"
   },

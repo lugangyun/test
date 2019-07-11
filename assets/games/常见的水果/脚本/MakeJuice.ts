@@ -1,3 +1,5 @@
+import AudioHelper from "../../../public/scripts/AudioHelper";
+
 const { ccclass, property } = cc._decorator;
 
 @ccclass
@@ -8,6 +10,15 @@ export default class MakeJuice extends cc.Component {
 
     @property(cc.Node)
     glassBox: cc.Node = null;
+
+    @property({ type: cc.AudioClip })
+    chooseFruitAudio: cc.AudioClip = null;
+
+    @property({ type: cc.AudioClip })
+    chooseGlassAudio: cc.AudioClip = null;
+
+    @property({ type: cc.AudioClip })
+    doneAudio: cc.AudioClip = null;
 
     private currentFruit: string;
     private currentPlayerNode: cc.Node;
@@ -39,7 +50,7 @@ export default class MakeJuice extends cc.Component {
         let playerComponent = this.getPlayerComponent(this.currentFruit + "杯" + glassIndex);
 
         this.videoEndHandle = async () => {
-            if (this.glassRepeat < 5) {
+            if (this.glassRepeat < 8) {
                 this.glassRepeat++;
                 playerComponent.currentTime = 0;
                 playerComponent.play();
@@ -51,6 +62,7 @@ export default class MakeJuice extends cc.Component {
                 this.showBox(BoxType.fruit, true);
             }
         }
+        AudioHelper.playAsync(this.doneAudio);
         await this.showVideoPlayer(true);
         playerComponent.play();
     }
@@ -74,9 +86,10 @@ export default class MakeJuice extends cc.Component {
 
     private async showBox(boxType: BoxType, show: boolean) {
         let box: cc.Node;
+        let tip: cc.AudioClip;
         switch (boxType) {
-            case BoxType.fruit: box = this.fruitBox; break;
-            case BoxType.glass: box = this.glassBox; break;
+            case BoxType.fruit: box = this.fruitBox; tip = this.chooseFruitAudio; break;
+            case BoxType.glass: box = this.glassBox; tip = this.chooseGlassAudio; break;
         }
         if (show) {
             box.active = true;
@@ -86,7 +99,10 @@ export default class MakeJuice extends cc.Component {
         return new Promise((resolve, reject) => {
             animation.on(cc.Animation.EventType.FINISHED, () => {
                 animation.off(cc.Animation.EventType.FINISHED);
-                if (!show) {
+                if (show) {
+                    AudioHelper.playAsync(tip);
+                }
+                else {
                     box.active = false;
                 }
                 resolve();
