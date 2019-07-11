@@ -44,8 +44,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.4457112171582371,
-      "y": 0.4457112171582371,
+      "x": 0.7722222222222223,
+      "y": 0.7722222222222223,
       "z": 1
     },
     "_quat": {
@@ -1880,8 +1880,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 3,
-    "transition": 3,
+    "_N$transition": 1,
+    "transition": 1,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 230,
@@ -2247,8 +2247,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 3,
-    "transition": 3,
+    "_N$transition": 1,
+    "transition": 1,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 230,
@@ -2614,8 +2614,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 3,
-    "transition": 3,
+    "_N$transition": 1,
+    "transition": 1,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 230,
@@ -2981,8 +2981,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 3,
-    "transition": 3,
+    "_N$transition": 1,
+    "transition": 1,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 230,
@@ -3348,8 +3348,8 @@
     ],
     "_N$interactable": true,
     "_N$enableAutoGrayEffect": false,
-    "_N$transition": 3,
-    "transition": 3,
+    "_N$transition": 1,
+    "transition": 1,
     "_N$normalColor": {
       "__type__": "cc.Color",
       "r": 230,
@@ -3433,6 +3433,21 @@
       "__id__": 42
     },
     "_enabled": true,
+    "redo": {
+      "__id__": 43
+    },
+    "last": {
+      "__id__": 51
+    },
+    "next": {
+      "__id__": 59
+    },
+    "guide": {
+      "__id__": 67
+    },
+    "replay": {
+      "__id__": 75
+    },
     "_id": "2952KivYFAyYR/swUHKxtB"
   },
   {

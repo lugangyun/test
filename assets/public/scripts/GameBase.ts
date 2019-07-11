@@ -61,6 +61,13 @@ export default abstract class GameBase {
         }
     }
 
+    public updateControlButtons() {
+        let bottomControlButtons = this.canvas.getChildByName("bottomControlButtons");
+        if (bottomControlButtons) {
+            
+        }
+    }
+
     public nextQuestion() {
         // this.record();
         if (this.questionIndex < this.questionLength - 1) {

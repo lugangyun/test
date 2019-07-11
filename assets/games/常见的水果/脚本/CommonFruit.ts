@@ -96,6 +96,7 @@ export default class CommonFruit extends GameBase {
         }
         else if (this.type == CommonFruitType.choose) {
             this.guideSwitch(false);
+            this.canvas.getChildByName("bottomControlButtons").active = false;
             this.setting = await this.showSettingPanel({
                 "题目内容": ["认识水果", "吃水果"]
             });
@@ -103,6 +104,7 @@ export default class CommonFruit extends GameBase {
                 case "认识水果": this.createChooseFruitQuestions(); break;
                 case "吃水果": this.createChooseActionQuestions(); break;
             }
+            this.canvas.getChildByName("bottomControlButtons").active = true;
             this.guideSwitch(true);
         }
     }
@@ -127,7 +129,7 @@ export default class CommonFruit extends GameBase {
                 sprite.spriteFrame = this.learningQuestion.spriteFrame;
                 label.string = this.learningQuestion.spriteFrame.name;
             }
-            let audioId = cc.audioEngine.play(this.learningQuestion.audioClip, false, 1);
+            this.guideReplay();
         }
         else if (this.type == CommonFruitType.choose) {
             let questionTitle = canvas.getChildByName("questionTitle");
@@ -167,7 +169,10 @@ export default class CommonFruit extends GameBase {
     };
 
     public async guideReplay() {
-        if (this.type == CommonFruitType.choose) {
+        if (this.type == CommonFruitType.learning) {
+            await AudioHelper.playAsync(this.learningQuestion.audioClip);
+        }
+        else if (this.type == CommonFruitType.choose) {
             await AudioHelper.playQueenAsync(this.chooseQuestion.audio);
         }
     };

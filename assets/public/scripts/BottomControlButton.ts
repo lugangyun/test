@@ -7,7 +7,22 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class BottomControlButton extends cc.Component {
 
-    clickEventHandle(event: cc.Event.EventTouch, args: string) {
+    @property(cc.Node)
+    redo: cc.Node = null;
+
+    @property(cc.Node)
+    last: cc.Node = null;
+
+    @property(cc.Node)
+    next: cc.Node = null;
+
+    @property(cc.Node)
+    guide: cc.Node = null;
+
+    @property(cc.Node)
+    replay: cc.Node = null;
+
+    async clickEventHandle(event: cc.Event.EventTouch, args: string) {
         let gameName = ServerInfo.getInstance().trainingName;
         let gameClass = GameNameMap.map[gameName];
         let game: GameBase = gameClass.getInstance();
@@ -17,7 +32,11 @@ export default class BottomControlButton extends cc.Component {
             case "next": game.nextQuestion(); break;
             case "last": game.lastQuestion(); break;
             case "guide": game.guideSwitch(); break;
-            case "replay": game.guideReplay(); break;
+            case "replay":
+                this.replay.getComponent(cc.Button).interactable = false;
+                await game.guideReplay();
+                this.replay.getComponent(cc.Button).interactable = true;
+                break;
         }
     }
 
