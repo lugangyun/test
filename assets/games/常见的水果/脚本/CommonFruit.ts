@@ -42,7 +42,7 @@ export default class CommonFruit extends GameBase {
         this.questionIndex = 0;
         this.questionLength = this.learningQuestions.length;
         this.updateCounter();
-        this.refresh();
+        this.refreshBase();
     }
 
     createChooseFruitQuestions() {
@@ -97,7 +97,6 @@ export default class CommonFruit extends GameBase {
         }
         else if (this.type == CommonFruitType.choose) {
             this.guideSwitch(false);
-            this.canvas.getChildByName("bottomControlButtons").active = false;
             GameTimer.stop();
             this.setting = await this.showSettingPanel({
                 "题目内容": ["认识水果", "吃水果"]
@@ -107,7 +106,6 @@ export default class CommonFruit extends GameBase {
                 case "认识水果": this.createChooseFruitQuestions(); break;
                 case "吃水果": this.createChooseActionQuestions(); break;
             }
-            this.canvas.getChildByName("bottomControlButtons").active = true;
             this.guideSwitch(true);
         }
     }
@@ -115,16 +113,10 @@ export default class CommonFruit extends GameBase {
     async refresh() {
         let canvas = cc.director.getScene().getChildByName("Canvas");
         if (this.type == CommonFruitType.learning) {
-            cc.audioEngine.stopAll();
             let box = canvas.getChildByName("learningPictureBox");
-            let controlButtons = canvas.getChildByName("controlButtons");
-            let nextButton = controlButtons.getChildByName("rightBtn").getComponent(cc.Button);
-            let preButton = controlButtons.getChildByName("leftBtn").getComponent(cc.Button);
             let sprite = box.getChildByName("learningPicture").getComponent(cc.Sprite);
             let label = box.getChildByName("label").getComponent(cc.Label);
             let firstSpirt = box.getChildByName("firstPicture").getComponent(cc.Sprite);
-            nextButton.interactable = this.questionIndex !== this.questionLength - 1;
-            preButton.interactable = this.questionIndex > 0;
             sprite.node.active = label.node.active = this.questionIndex > 0;
             firstSpirt.node.active = this.questionIndex == 0;
             if (this.questionIndex == 0) {
@@ -133,7 +125,6 @@ export default class CommonFruit extends GameBase {
                 sprite.spriteFrame = this.learningQuestion.spriteFrame;
                 label.string = this.learningQuestion.spriteFrame.name;
             }
-            this.guideReplay();
         }
         else if (this.type == CommonFruitType.choose) {
             let questionTitle = canvas.getChildByName("questionTitle");
@@ -144,8 +135,8 @@ export default class CommonFruit extends GameBase {
                 chooses.children[index].getChildByName("image")
                     .getComponent(cc.Sprite).spriteFrame = spriteFrame;
             })
-            await AudioHelper.playQueenAsync(this.chooseQuestion.audio);
         }
+        await this.guideReplay();
     }
 
     async judge(selectIndex: number) {

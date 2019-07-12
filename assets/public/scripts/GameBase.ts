@@ -3,8 +3,8 @@ import { Report } from "./dto/Report";
 import ServerInfo from "./ServerInfo";
 import GameTimer from "./GameTimer";
 import SettingPanel from "./SettingPanel";
-import BottomControlButton from "./control-button/BottomControlButton";
 import ControlButtonType from "./control-button/ControlButtonType";
+import ControlButton from "./control-button/ControlButton";
 
 export default abstract class GameBase {
 
@@ -19,8 +19,10 @@ export default abstract class GameBase {
     }
 
     get isLastQuestion() {
-        return this.questionIndex == this.questionLength - 2;
+        return this.questionIndex == this.questionLength - 1;
     }
+
+    isContinuePlaying = false;
 
     async initial(type: number) {
         GameTimer.reset();
@@ -29,7 +31,7 @@ export default abstract class GameBase {
         this.saveReportInput.details = [];
         this.reportDetail = new ReportDetial();
         this.type = type;
-        let buttons = this.bottomControlButtons;
+        let buttons = this.controlButtons;
         if (buttons) {
             buttons.active = false;
         }
@@ -37,48 +39,44 @@ export default abstract class GameBase {
         this.updateCounter();
 
         if (buttons) {
-            let script = buttons.getComponent(BottomControlButton);
-            let controlButtonTransition = async (operation: () => Promise<any>) => {
-                cc.audioEngine.stopAll();
-                await operation.call(this);
-            }
+            let script = buttons.getComponent(ControlButton);
             buttons.active = true;
             script.setButtonState(ControlButtonType.last, false);
-            buttons.on(ControlButtonType.redo, async () => {
-                controlButtonTransition(this.refresh);
-            }, this);
-            buttons.on(ControlButtonType.last, async () => {
-                controlButtonTransition(this.lastQuestion);
-            }, this);
-            buttons.on(ControlButtonType.next, async () => {
-                controlButtonTransition(this.nextQuestion);
-            }, this);
+            buttons.on(ControlButtonType.playAll, async () => {
+                this.isContinuePlaying = true;
+                this.disableAllControlButtons();
+                this.gotoFirstQuestion();
+                while (!this.isLastQuestion) {
+                    await this.nextQuestion();
+                }
+                this.isContinuePlaying = false;
+                this.enableAllControlButtons();
+                this.updateControlButton();
+            });
+            buttons.on(ControlButtonType.redo, this.refreshBase, this);
+            buttons.on(ControlButtonType.last, this.lastQuestion, this);
+            buttons.on(ControlButtonType.next, this.nextQuestion, this);
             buttons.on(ControlButtonType.guide, () => { this.guideSwitch(); }, this);
-            buttons.on(ControlButtonType.replay, async () => {
-                controlButtonTransition(this.guideReplay);
-            }, this);
-            controlButtonTransition(this.refresh);
+            buttons.on(ControlButtonType.replay, this.guideReplayBase, this);
         }
-        else {
-            this.refresh();
-        }
+        this.refreshBase();
     }
 
     get canvas() {
         return cc.director.getScene().getChildByName("Canvas");
     }
 
-    get bottomControlButtons() {
-        return this.canvas.getChildByName("bottomControlButtons");
+    get controlButtons() {
+        return this.canvas.getChildByName("controlButtons");
     }
 
     public disableAllControlButtons() {
-        let script = this.bottomControlButtons.getComponent(BottomControlButton);
+        let script = this.controlButtons.getComponent(ControlButton);
         script.disableAll();
     }
 
     public enableAllControlButtons() {
-        let script = this.bottomControlButtons.getComponent(BottomControlButton);
+        let script = this.controlButtons.getComponent(ControlButton);
         script.enableAll();
         this.updateControlButton();
     }
@@ -117,8 +115,8 @@ export default abstract class GameBase {
     }
 
     public updateControlButton() {
-        if (this.bottomControlButtons) {
-            let script = this.bottomControlButtons.getComponent(BottomControlButton);
+        if (this.controlButtons && !this.isContinuePlaying) {
+            let script = this.controlButtons.getComponent(ControlButton);
             if (this.isFirstQuestion) {
                 script.setButtonState(ControlButtonType.last, false);
                 script.setButtonState(ControlButtonType.next, true);
@@ -134,13 +132,28 @@ export default abstract class GameBase {
         }
     }
 
+    public async refreshBase() {
+        cc.audioEngine.stopAll();
+        this.updateCounter();
+        this.updateControlButton();
+        await this.refresh();
+    }
+
+    public async guideReplayBase() {
+        cc.audioEngine.stopAll();
+        this.guideReplay();
+    }
+
+    public async gotoFirstQuestion() {
+        this.questionIndex = 0;
+        await this.refreshBase();
+    }
+
     public async nextQuestion() {
         // this.record();
         if (this.questionIndex < this.questionLength - 1) {
             this.questionIndex++;
-            this.updateCounter();
-            this.updateControlButton();
-            await this.refresh();
+            await this.refreshBase();
         }
         else {
             // this.saveReport();
@@ -150,9 +163,7 @@ export default abstract class GameBase {
     public async lastQuestion() {
         if (this.questionIndex > 0) {
             this.questionIndex--;
-            this.updateCounter();
-            this.updateControlButton();
-            await this.refresh();
+            await this.refreshBase();
         }
     }
 

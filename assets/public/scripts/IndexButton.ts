@@ -14,7 +14,7 @@ export default class NewClass extends cc.Component {
 
         let labelNode = new cc.Node();
         let label = labelNode.addComponent(cc.RichText);
-        label.string = "<outline color=red width=4>加载中...</outline>";
+        label.string = "<outline color=orange width=4>加载中...</outline>";
         label.fontSize = 50;
         label.lineHeight = 100;
         cc.director.getScene().getChildByName("Canvas").addChild(labelNode);
