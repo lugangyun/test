@@ -39,10 +39,8 @@ export default abstract class GameBase {
         if (buttons) {
             let script = buttons.getComponent(BottomControlButton);
             let controlButtonTransition = async (operation: () => Promise<any>) => {
-                script.disableAll();
+                cc.audioEngine.stopAll();
                 await operation.call(this);
-                script.enableAll();
-                this.updateControlButton();
             }
             buttons.active = true;
             script.setButtonState(ControlButtonType.last, false);
@@ -141,6 +139,7 @@ export default abstract class GameBase {
         if (this.questionIndex < this.questionLength - 1) {
             this.questionIndex++;
             this.updateCounter();
+            this.updateControlButton();
             await this.refresh();
         }
         else {
@@ -152,6 +151,7 @@ export default abstract class GameBase {
         if (this.questionIndex > 0) {
             this.questionIndex--;
             this.updateCounter();
+            this.updateControlButton();
             await this.refresh();
         }
     }

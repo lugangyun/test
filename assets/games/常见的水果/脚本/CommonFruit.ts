@@ -115,6 +115,7 @@ export default class CommonFruit extends GameBase {
     async refresh() {
         let canvas = cc.director.getScene().getChildByName("Canvas");
         if (this.type == CommonFruitType.learning) {
+            cc.audioEngine.stopAll();
             let box = canvas.getChildByName("learningPictureBox");
             let controlButtons = canvas.getChildByName("controlButtons");
             let nextButton = controlButtons.getChildByName("rightBtn").getComponent(cc.Button);
