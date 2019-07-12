@@ -41,6 +41,7 @@ export default class ChooseBox extends cc.Component {
     }
 
     async right() {
+        cc.audioEngine.stopAll();
         return new Promise((resolve, reject) => {
             this.getComponent(cc.Button).interactable = false;
             this.draw(0x00e600);
@@ -52,6 +53,7 @@ export default class ChooseBox extends cc.Component {
     }
 
     async wrong() {
+        cc.audioEngine.stopAll();
         return new Promise((resolve, reject) => {
             this.getComponent(cc.Button).interactable = false;
             this.draw(0xff0000);
@@ -68,7 +70,7 @@ export default class ChooseBox extends cc.Component {
 
     draw(color: number) {
         let graphics = this.node.getComponent(cc.Graphics);
-        graphics.strokeColor = cc.color(color >> 16, (color & 0x00FF00) >> 8, color & 0x0000FF, 255);
+        graphics.strokeColor = cc.color(color >> 16, (color & 0x00FF00) >> 8, color & 0x0000FF);
         graphics.roundRect(-this.node.width / 2, -this.node.height / 2, this.node.width, this.node.height, 10);
         graphics.fill();
         graphics.stroke();

@@ -5,6 +5,7 @@ import ChooseBox from "../../../public/scripts/template/ChooseBox";
 import SheepRight from "../../../public/scripts/SheepRight";
 import MakeJuice from "./MakeJuice";
 import AudioHelper from "../../../public/scripts/AudioHelper";
+import GameTimer from "../../../public/scripts/GameTimer";
 
 export default class CommonFruit extends GameBase {
 
@@ -97,9 +98,11 @@ export default class CommonFruit extends GameBase {
         else if (this.type == CommonFruitType.choose) {
             this.guideSwitch(false);
             this.canvas.getChildByName("bottomControlButtons").active = false;
+            GameTimer.stop();
             this.setting = await this.showSettingPanel({
                 "题目内容": ["认识水果", "吃水果"]
             });
+            GameTimer.start();
             switch (this.setting["题目内容"]) {
                 case "认识水果": this.createChooseFruitQuestions(); break;
                 case "吃水果": this.createChooseActionQuestions(); break;
@@ -109,7 +112,7 @@ export default class CommonFruit extends GameBase {
         }
     }
 
-    refresh(): void {
+    async refresh() {
         let canvas = cc.director.getScene().getChildByName("Canvas");
         if (this.type == CommonFruitType.learning) {
             let box = canvas.getChildByName("learningPictureBox");
@@ -140,11 +143,12 @@ export default class CommonFruit extends GameBase {
                 chooses.children[index].getChildByName("image")
                     .getComponent(cc.Sprite).spriteFrame = spriteFrame;
             })
-            AudioHelper.playQueenAsync(this.chooseQuestion.audio);
+            await AudioHelper.playQueenAsync(this.chooseQuestion.audio);
         }
     }
 
     async judge(selectIndex: number) {
+        this.disableAllControlButtons();
         let chooses = this.canvas.getChildByName("chooses");
         chooses.children.forEach((choose, index) => {
             if (index != selectIndex) {
@@ -159,6 +163,7 @@ export default class CommonFruit extends GameBase {
         else {
             await selectTarget.wrong();
         }
+        this.enableAllControlButtons();
     }
 
     public guideSwitch(isShow?: boolean) {
