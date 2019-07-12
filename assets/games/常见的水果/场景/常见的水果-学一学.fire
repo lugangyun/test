@@ -2235,7 +2235,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 100,
-      "height": 25
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2280,7 +2280,7 @@
     "_string": "连续播放",
     "_N$string": "连续播放",
     "_fontSize": 25,
-    "_lineHeight": 25,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -2493,7 +2493,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 150,
-      "height": 25
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2538,7 +2538,7 @@
     "_string": "重播当前语音",
     "_N$string": "重播当前语音",
     "_fontSize": 25,
-    "_lineHeight": 25,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -2773,7 +2773,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 75,
-      "height": 25
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2818,7 +2818,7 @@
     "_string": "上一个",
     "_N$string": "上一个",
     "_fontSize": 25,
-    "_lineHeight": 25,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -3053,7 +3053,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 75,
-      "height": 25
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3098,7 +3098,7 @@
     "_string": "下一个",
     "_N$string": "下一个",
     "_fontSize": 25,
-    "_lineHeight": 25,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
