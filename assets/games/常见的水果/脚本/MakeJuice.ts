@@ -11,6 +11,9 @@ export default class MakeJuice extends cc.Component {
     @property(cc.Node)
     glassBox: cc.Node = null;
 
+    @property(cc.Node)
+    backButton: cc.Node = null;
+
     @property({ type: cc.AudioClip })
     chooseFruitAudio: cc.AudioClip = null;
 
@@ -43,6 +46,13 @@ export default class MakeJuice extends cc.Component {
         playerComponent.play();
     }
 
+    async backButtonClickHandle() {
+        this.glassRepeat = 0;
+        this.backButton.active = false;
+        await this.showVideoPlayer(false);
+        this.showBox(BoxType.fruit, true);
+    }
+
     private glassRepeat = 0;
     async showGlass(event: cc.Event.EventTouch, args: string) {
         let glassIndex = args;
@@ -56,10 +66,7 @@ export default class MakeJuice extends cc.Component {
                 playerComponent.play();
             }
             else {
-                this.glassRepeat = 0;
-                await this.showVideoPlayer(false);
-                playerComponent.stop();
-                this.showBox(BoxType.fruit, true);
+                this.backButton.active = true;
             }
         }
         AudioHelper.playAsync(this.doneAudio);
@@ -142,6 +149,7 @@ export default class MakeJuice extends cc.Component {
             }
         });
         this.showBox(BoxType.fruit, true);
+        this.backButton.active = false;
     }
 
     // update(dt) {}
