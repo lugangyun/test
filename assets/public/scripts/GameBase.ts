@@ -53,6 +53,8 @@ export default abstract class GameBase {
                     await this.nextQuestion();
                 }
                 this.isContinuePlaying = false;
+                this.gotoFirstQuestion();
+                cc.audioEngine.stopAll();
                 script.setNodeActive(ControlButtonType.playAll, true);
                 script.setNodeActive(ControlButtonType.backToPlayStep, false);
                 this.enableAllControlButtons();
