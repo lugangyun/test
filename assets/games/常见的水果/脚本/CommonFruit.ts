@@ -43,6 +43,7 @@ export default class CommonFruit extends GameBase {
         this.questionLength = this.learningQuestions.length;
         this.updateCounter();
         this.isContinuePlaying = false;
+        this.backToPlayStep();
         this.enableAllControlButtons();
         this.refreshBase();
     }

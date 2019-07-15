@@ -9,6 +9,9 @@ export default class ControlButton extends cc.Component {
     playAll: cc.Node = null;
 
     @property(cc.Node)
+    backToPlayStep: cc.Node = null;
+
+    @property(cc.Node)
     redo: cc.Node = null;
 
     @property(cc.Node)
@@ -24,7 +27,8 @@ export default class ControlButton extends cc.Component {
     replay: cc.Node = null;
 
     get allNodes() {
-        return [this.playAll, this.redo, this.last, this.next, this.guide, this.replay];
+        return [this.playAll, this.backToPlayStep, this.redo, this.last, this.next, 
+            this.guide, this.replay];
     }
 
     async clickEventHandle(event: cc.Event.EventTouch, args: string) {
@@ -51,6 +55,10 @@ export default class ControlButton extends cc.Component {
 
     public setButtonState(type: string, enable: boolean) {
         this[type].getComponent(cc.Button).interactable = enable;
+    }
+
+    public setNodeActive(type: string, active: boolean) {
+        this[type].active = active;
     }
 
     // LIFE-CYCLE CALLBACKS:

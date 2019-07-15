@@ -45,14 +45,20 @@ export default abstract class GameBase {
             buttons.on(ControlButtonType.playAll, async () => {
                 this.isContinuePlaying = true;
                 this.disableAllControlButtons();
-                this.gotoFirstQuestion();
+                script.setNodeActive(ControlButtonType.playAll, false);
+                script.setNodeActive(ControlButtonType.backToPlayStep, true);
+                script.setButtonState(ControlButtonType.backToPlayStep, true);
+                await this.gotoFirstQuestion();
                 while (!this.isLastQuestion) {
                     await this.nextQuestion();
                 }
                 this.isContinuePlaying = false;
+                script.setNodeActive(ControlButtonType.playAll, true);
+                script.setNodeActive(ControlButtonType.backToPlayStep, false);
                 this.enableAllControlButtons();
                 this.updateControlButton();
-            });
+            }, this);
+            buttons.on(ControlButtonType.backToPlayStep, this.backToPlayStep, this);
             buttons.on(ControlButtonType.redo, this.refreshBase, this);
             buttons.on(ControlButtonType.last, this.lastQuestion, this);
             buttons.on(ControlButtonType.next, this.nextQuestion, this);
@@ -79,6 +85,15 @@ export default abstract class GameBase {
         let script = this.controlButtons.getComponent(ControlButton);
         script.enableAll();
         this.updateControlButton();
+    }
+
+    public backToPlayStep() {
+        cc.audioEngine.stopAll();
+        this.isContinuePlaying = false;
+        let script = this.controlButtons.getComponent(ControlButton);
+        script.enableAll();
+        script.setNodeActive(ControlButtonType.backToPlayStep, false);
+        script.setNodeActive(ControlButtonType.playAll, true);
     }
 
     async showSettingPanel(setting: any) {
