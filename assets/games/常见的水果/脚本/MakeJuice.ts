@@ -66,7 +66,8 @@ export default class MakeJuice extends cc.Component {
                 playerComponent.play();
             }
             else {
-                this.backButton.active = true;
+                // this.backButton.active = true;
+                this.backButtonClickHandle();
             }
         }
         AudioHelper.playAsync(this.doneAudio);

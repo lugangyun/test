@@ -351,8 +351,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 354.9,
-      "height": 25
+      "width": 287.94,
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -361,8 +361,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -444.00000000000006,
-      "y": 329,
+      "x": -476.03,
+      "y": 325,
       "z": 0
     },
     "_scale": {
@@ -394,10 +394,10 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "生活适应-常见的水果 - 学一学",
-    "_N$string": "生活适应-常见的水果 - 学一学",
-    "_fontSize": 25,
-    "_lineHeight": 25,
+    "_string": "常见的水果 - 学一学",
+    "_N$string": "常见的水果 - 学一学",
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "5ff9d47b-7079-49a2-b28e-2ee435c3d7ad"
@@ -423,9 +423,9 @@
     "alignMode": 1,
     "_target": null,
     "_alignFlags": 9,
-    "_left": 18.55000000000001,
+    "_left": 20,
     "_right": 0,
-    "_top": 18.5,
+    "_top": 20,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
