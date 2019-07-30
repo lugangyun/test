@@ -66,22 +66,24 @@ export default class ControlButton extends cc.Component {
 
     private updateLabelColor(buttonNode: cc.Node) {
         let buttonComponent = buttonNode.getComponent(cc.Button);
-        let labelNode = buttonNode.getChildByName("Background").getChildByName("Label");
-        if (!buttonComponent.interactable) {
-            labelNode.color = this.labelColor.disable;
-        }
-        else if (this.currentButton != buttonNode) {
-            labelNode.color = this.labelColor.normal;
-        }
-        else {
-            if (this.buttonState.down && this.buttonState.enter) {
-                labelNode.color = this.labelColor.down;
+        if (!(buttonNode.getChildByName("Background") == null)) {
+            let labelNode = buttonNode.getChildByName("Background").getChildByName("Label");
+            if (!buttonComponent.interactable) {
+                labelNode.color = this.labelColor.disable;
             }
-            else if (this.buttonState.enter) {
-                labelNode.color = this.labelColor.enter;
+            else if (this.currentButton != buttonNode) {
+                labelNode.color = this.labelColor.normal;
             }
             else {
-                labelNode.color = this.labelColor.normal;
+                if (this.buttonState.down && this.buttonState.enter) {
+                    labelNode.color = this.labelColor.down;
+                }
+                else if (this.buttonState.enter) {
+                    labelNode.color = this.labelColor.enter;
+                }
+                else {
+                    labelNode.color = this.labelColor.normal;
+                }
             }
         }
     }
@@ -115,7 +117,6 @@ export default class ControlButton extends cc.Component {
                 let buttonComponent = buttonNode.getComponent(cc.Button);
                 buttonComponent.clickEvents.push(eventHandler);
 
-                let labelNode = buttonNode.getChildByName("Background").getChildByName("Label");
                 buttonNode.on(cc.Node.EventType.MOUSE_ENTER, (event: cc.Event) => {
                     this.buttonState.enter = true;
                     this.currentButton = event.target;

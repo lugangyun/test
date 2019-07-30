@@ -6,6 +6,7 @@ import SheepRight from "../../../public/scripts/SheepRight";
 import MakeJuice from "./MakeJuice";
 import AudioHelper from "../../../public/scripts/AudioHelper";
 import GameTimer from "../../../public/scripts/GameTimer";
+import ControlButtonType from "../../../public/scripts/control-button/ControlButtonType";
 
 export default class CommonFruit extends GameBase {
 
@@ -128,18 +129,37 @@ export default class CommonFruit extends GameBase {
                 sprite.spriteFrame = this.learningQuestion.spriteFrame;
                 label.string = this.learningQuestion.spriteFrame.name;
             }
+            await this.guideReplay();
         }
         else if (this.type == CommonFruitType.choose) {
-            let questionTitle = canvas.getChildByName("questionTitle");
-            questionTitle.getComponent(cc.Label).string = this.chooseQuestion.text;
-            let chooses = canvas.getChildByName("chooses");
-            this.chooseQuestion.sprites.forEach((spriteFrame, index) => {
-                chooses.children[index].getComponent(ChooseBox).init(this.judge, this);
-                chooses.children[index].getChildByName("image")
-                    .getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            })
+            this.chooseInterfaceRefresh();
+            if (this.setting["题目内容"] == "认识水果") {
+                await this.guideReplay();
+            }
+            else {
+                this.guideReplay();
+                let buttons = this.controlButtons;
+                buttons.on(ControlButtonType.redo, this.callback, this);
+                buttons.on(ControlButtonType.last, this.callback, this);
+                buttons.on(ControlButtonType.next, this.callback, this);
+            }
         }
-        await this.guideReplay();
+    }
+
+    public async callback() {
+        cc.audioEngine.stopAll();
+    }
+
+    public async chooseInterfaceRefresh() {
+        let canvas = cc.director.getScene().getChildByName("Canvas");
+        let questionTitle = canvas.getChildByName("questionTitle");
+        questionTitle.getComponent(cc.Label).string = this.chooseQuestion.text;
+        let chooses = canvas.getChildByName("chooses");
+        this.chooseQuestion.sprites.forEach((spriteFrame, index) => {
+            chooses.children[index].getComponent(ChooseBox).init(this.judge, this);
+            chooses.children[index].getChildByName("image")
+                .getComponent(cc.Sprite).spriteFrame = spriteFrame;
+        })
     }
 
     async judge(selectIndex: number) {
